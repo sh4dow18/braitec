@@ -1,0 +1,37 @@
+.burger-menu {
+  display: none;
+}
+@media screen and (max-width: 1235px) {
+  .burger-menu img {
+    margin-right: 20px;
+  }
+  .burger-menu {
+    display: block;
+    position: relative;
+  }
+  .burger-menu img {
+    filter: invert(100%);
+  }
+  .burger-menu nav {
+    position: absolute;
+    z-index: 1;
+    background-color: #0a0a0a;
+    margin: 1.5rem 0 0 -0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    transform: translateX(-110%);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .burger-menu.open nav {
+    transform: translateX(0);
+  } 
+  .burger-menu nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    user-select: none;
+    font-size: 1.1rem;
+  }
+}
