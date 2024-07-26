@@ -28,15 +28,21 @@ export default function RootLayout({
       <Link href="/about-us">Nosotros</Link>
     </>
   );
+  const LOGO = <p>BRAITEC</p>;
   return (
     <html lang="en">
       <body>
         <header>
           <BurgerMenu pages={PAGES} />
-          <p>BRAITEC</p>
+          {LOGO}
           <nav className="desktop-nav">{PAGES}</nav>
         </header>
         <main>{children}</main>
+        <footer>
+          <section className="main-footer-container-section">
+            {LOGO}
+          </section>
+        </footer>
       </body>
     </html>
   );

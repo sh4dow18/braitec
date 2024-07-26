@@ -5,11 +5,17 @@
   --text-color: #fafafa;
   --primary: #008ff5;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Main Tag Styles */
 /* sorted Alphabetically */
 body {
-  margin: 0;
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
 }
 body > header {
   /* Display */
@@ -44,6 +50,27 @@ body > header p {
 }
 .desktop-nav a:hover {
   color: var(--primary);
+}
+main {
+  /* Display */
+  flex: 1;
+}
+.main-footer-container-section {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  /* Spacers */
+  padding: 1rem 10%;
+  /* Text */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Colors */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.main-footer-container-section > p {
+  /* Texts */
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 @media screen and (max-width: 1235px) {
   body > header {
