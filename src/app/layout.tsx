@@ -111,6 +111,19 @@ export default function RootLayout({
                 </Link>
               </section>
             </section>
+            <section className="main-footer-links-section">
+              <p>Teléfono</p>
+              <section>
+                <Link href="tel:+50689414905" target="_blank">
+                  <Image
+                    src="/phone.svg"
+                    alt="Ícono Teléfono"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+              </section>
+            </section>
           </section>
         </footer>
       </body>
