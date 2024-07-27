@@ -72,6 +72,37 @@ main {
   font-size: 1.3rem;
   font-weight: bold;
 }
+.main-footer-container-section img {
+  /* Display */
+  border-radius: 2rem;
+  /* Spacers */
+  padding: 0.5rem;
+  /* Colors */
+  filter: invert(100%);
+  border: 2px solid var(--background-color);
+}
+.main-footer-container-section img:hover {
+  /* Colors */
+  filter: invert(0%);
+  background-color: var(--text-color);
+}
+.main-footer-location-section {
+  margin-left: 2rem;
+}
+.main-footer-location-section p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+.main-footer-location-section section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-footer-location-section section img {
+  margin-inline: 0.3rem;
+}
 @media screen and (max-width: 1235px) {
   body > header {
     padding: 1rem;

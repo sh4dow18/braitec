@@ -41,6 +41,44 @@ export default function RootLayout({
         <footer>
           <section className="main-footer-container-section">
             {LOGO}
+            <section className="main-footer-location-section">
+              <p>Ubicación</p>
+              <section>
+                <Link
+                  href="https://maps.app.goo.gl/Uh3aYiwm8Y6PHUsj7"
+                  target="_blank"
+                >
+                  <Image
+                    src="/google-maps.svg"
+                    alt="Ícono Google Maps"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=9.9799299&dropoff[longitude]=-84.2412363&dropoff[nickname]=Braitec:%20Soluciones%20Tecnológicas"
+                  target="_blank"
+                >
+                  <Image
+                    src="/uber.svg"
+                    alt="Ícono Uber"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  href="https://www.waze.com/en/live-map/directions/cr/alajuela-province/alajuela/braitec-soluciones-tecnologicas?navigate=yes&place=ChIJu4Al3TL5oI8RAtAlY655p3k&utm_campaign=default&utm_medium=lm_share_location&utm_source=waze_website"
+                  target="_blank"
+                >
+                  <Image
+                    src="/waze.svg"
+                    alt="Ícono Waze"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+              </section>
+            </section>
           </section>
         </footer>
       </body>
