@@ -5,11 +5,17 @@
   --text-color: #fafafa;
   --primary: #008ff5;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Main Tag Styles */
 /* sorted Alphabetically */
 body {
-  margin: 0;
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
 }
 body > header {
   /* Display */
@@ -45,15 +51,90 @@ body > header p {
 .desktop-nav a:hover {
   color: var(--primary);
 }
-@media screen and (max-width: 1235px) {
-  body > header {
-    padding: 1rem;
-    justify-content: left;
+main {
+  /* Display */
+  flex: 1;
+}
+footer {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Spacers */
+  padding: 1rem 10%;
+  /* Text */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Colors */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+footer > p {
+  /* Display */
+  align-content: center;
+  /* Texts */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 572px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  footer > p {
+    /* Display */
+    display: none;
   }
+}
+@media screen and (max-width: 815px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  footer {
+    /* Spacers */
+    padding-inline: 1rem;
+  }
+
+  /* Second Grade */
+
+  footer > p {
+    /* Spacers */
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 1235px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  body > header {
+    /* Display */
+    justify-content: left;
+    /* Spacers */
+    padding: 1rem;
+  }
+
+  /* Third Grade */
+
   body header > p {
+    /* Texts */
     font-size: 1.5rem;
   }
+
+  /* Main Clases Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
   .desktop-nav {
+    /* Display */
     display: none;
   }
 }

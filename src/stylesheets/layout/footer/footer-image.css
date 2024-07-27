@@ -1,0 +1,19 @@
+/* Main Clases Styles */
+/* Sorted Alphabetically */
+
+/* Second Grade */
+
+.footer-image img {
+  /* Display */
+  border-radius: 2rem;
+  /* Spacers */
+  padding: 0.5rem;
+  /* Colors */
+  border: 2px solid var(--background-color);
+  filter: invert(100%);
+}
+.footer-image img:hover {
+  /* Colors */
+  background-color: var(--text-color);
+  filter: invert(0%);
+}
