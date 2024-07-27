@@ -86,21 +86,21 @@ main {
   filter: invert(0%);
   background-color: var(--text-color);
 }
-.main-footer-location-section {
+.main-footer-links-section {
   margin-left: 2rem;
 }
-.main-footer-location-section p {
+.main-footer-links-section p {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
   text-align: center;
 }
-.main-footer-location-section section {
+.main-footer-links-section section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.main-footer-location-section section img {
+.main-footer-links-section section img {
   margin-inline: 0.3rem;
 }
 @media screen and (max-width: 1235px) {

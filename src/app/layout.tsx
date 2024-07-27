@@ -41,7 +41,7 @@ export default function RootLayout({
         <footer>
           <section className="main-footer-container-section">
             {LOGO}
-            <section className="main-footer-location-section">
+            <section className="main-footer-links-section">
               <p>Ubicación</p>
               <section>
                 <Link
@@ -73,6 +73,38 @@ export default function RootLayout({
                   <Image
                     src="/waze.svg"
                     alt="Ícono Waze"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+              </section>
+            </section>
+            <section className="main-footer-links-section">
+              <p>Redes Sociales</p>
+              <section>
+                <Link href="https://wa.me/50689414905" target="_blank">
+                  <Image
+                    src="/whatsapp.svg"
+                    alt="Ícono Whatsapp"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/BraitecCR/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/facebook.svg"
+                    alt="Ícono Facebook"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link href="https://github.com/sh4dow18" target="_blank">
+                  <Image
+                    src="/github.svg"
+                    alt="Ícono Github"
                     width={25}
                     height={25}
                   />
