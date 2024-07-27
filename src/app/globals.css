@@ -104,6 +104,21 @@ main {
 .main-footer-links-section section img {
   margin-inline: 0.3rem;
 }
+.main-footer-credits-section {
+  margin-inline: 2rem;
+}
+.main-footer-credits-section > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.main-footer-credits-section section p {
+  font-weight: bold;
+  margin-bottom: 0.45rem;
+}
+.main-footer-credits-section section p a {
+  color: var(--text-color);
+}
 @media screen and (max-width: 1235px) {
   body > header {
     padding: 1rem;

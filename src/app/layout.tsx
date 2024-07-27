@@ -124,6 +124,24 @@ export default function RootLayout({
                 </Link>
               </section>
             </section>
+            <section className="main-footer-credits-section">
+              <p>Créditos</p>
+              <section>
+                <p>
+                  Página hecha por{" "}
+                  <Link href="https://digital-me.vercel.app">
+                    Ramsés Solano
+                  </Link>
+                </p>
+                <p>
+                  Copyright ©{" "}
+                  <Link href="https://braitec.vercel.app">
+                    Braitec: Soluciones Tecnológicas
+                  </Link>{" "}
+                  26 de Julio del 2024
+                </p>
+              </section>
+            </section>
           </section>
         </footer>
       </body>
