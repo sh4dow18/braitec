@@ -55,10 +55,11 @@ main {
   /* Display */
   flex: 1;
 }
-.main-footer-container-section {
+footer {
   /* Display */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* Spacers */
   padding: 1rem 10%;
   /* Text */
@@ -67,67 +68,73 @@ main {
   background-color: var(--background-color);
   color: var(--text-color);
 }
-.main-footer-container-section > p {
-  /* Texts */
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.main-footer-container-section img {
+footer > p {
   /* Display */
-  border-radius: 2rem;
-  /* Spacers */
-  padding: 0.5rem;
-  /* Colors */
-  filter: invert(100%);
-  border: 2px solid var(--background-color);
-}
-.main-footer-container-section img:hover {
-  /* Colors */
-  filter: invert(0%);
-  background-color: var(--text-color);
-}
-.main-footer-links-section {
-  margin-left: 2rem;
-}
-.main-footer-links-section p {
-  font-size: 1.3rem;
+  align-content: center;
+  /* Texts */
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 0.8rem;
-  text-align: center;
 }
-.main-footer-links-section section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 572px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  footer > p {
+    /* Display */
+    display: none;
+  }
 }
-.main-footer-links-section section img {
-  margin-inline: 0.3rem;
-}
-.main-footer-credits-section {
-  margin-inline: 2rem;
-}
-.main-footer-credits-section > p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0.8rem;
-}
-.main-footer-credits-section section p {
-  font-weight: bold;
-  margin-bottom: 0.45rem;
-}
-.main-footer-credits-section section p a {
-  color: var(--text-color);
+@media screen and (max-width: 815px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  footer {
+    /* Spacers */
+    padding-inline: 1rem;
+  }
+
+  /* Second Grade */
+
+  footer > p {
+    /* Spacers */
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 1235px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
   body > header {
-    padding: 1rem;
+    /* Display */
     justify-content: left;
+    /* Spacers */
+    padding: 1rem;
   }
+
+  /* Third Grade */
+
   body header > p {
+    /* Texts */
     font-size: 1.5rem;
   }
+
+  /* Main Clases Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
   .desktop-nav {
+    /* Display */
     display: none;
   }
 }
