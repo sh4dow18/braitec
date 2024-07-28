@@ -3,7 +3,7 @@ import "./globals.css";
 // Main Layout Requirements
 import Link from "next/link";
 import { FooterImage, FooterSection } from "@/components/layout/footer";
-import { BurgerMenu } from "@/components/layout";
+import { BurgerMenu } from "@/components/layout/header";
 // Main Layout Function
 export default function RootLayout({
   children,
