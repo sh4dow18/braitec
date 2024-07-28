@@ -1,5 +1,5 @@
 // Main Layout Stylesheets
-import "./globals.css";
+import "@/stylesheets/globals.css";
 // Main Layout Requirements
 import Link from "next/link";
 import { FooterImage, FooterSection } from "@/components/layout/footer";
