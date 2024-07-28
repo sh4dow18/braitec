@@ -11,8 +11,13 @@ type Props = {
 };
 // Footer Image Main Function
 function FooterImage({ link, icon, alt }: Props) {
+  // Return Footer Image Component
   return (
+    // Link that opens in a New Tab
     <Link className="footer-image" href={link} target="_blank">
+      {/* This Image only opens SVG */}
+      {/* Also, if alt is undefined, the icon name will be the alt */}
+      {/* but changing "-" to " " and putting the first letter of each word in uppercase */}
       <Image
         src={`/${icon}.svg`}
         alt={`Ícono ${
