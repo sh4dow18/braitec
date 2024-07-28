@@ -1,4 +1,4 @@
-/* Main Clases Styles */
+/* Main Classes Styles */
 /* Sorted Alphabetically */
 
 /* First Grade */
@@ -34,6 +34,7 @@
 }
 
 /* Third Grade */
+
 .footer-links-section section img {
   /* Spacers */
   margin-inline: 0.3rem;
@@ -56,7 +57,7 @@
 /* Sorted by Max Width */
 
 @media screen and (max-width: 815px) {
-  /* Main Clases Styles */
+  /* Main Classes Styles */
   /* Sorted Alphabetically */
 
   /* First Grade */
@@ -75,7 +76,7 @@
 }
 
 @media screen and (max-width: 1525px) {
-  /* Main Clases Styles */
+  /* Main Classes Styles */
   /* Sorted Alphabetically */
 
   /* Second Grade */

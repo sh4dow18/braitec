@@ -1,4 +1,4 @@
-/* Main Clases Styles */
+/* Main Classes Styles */
 /* Sorted Alphabetically */
 
 /* Second Grade */
@@ -9,11 +9,11 @@
   /* Spacers */
   padding: 0.5rem;
   /* Colors */
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--black);
   filter: invert(100%);
 }
 .footer-image img:hover {
   /* Colors */
-  background-color: var(--text-color);
+  background-color: var(--white);
   filter: invert(0%);
 }

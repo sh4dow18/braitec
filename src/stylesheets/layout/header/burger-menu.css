@@ -1,0 +1,65 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.burger-menu {
+  /* Display */
+  display: none;
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 1235px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .burger-menu {
+    display: block;
+    position: relative;
+  }
+  /* Second Grade */
+
+  .burger-menu img {
+    /* Spacers */
+    margin-right: 20px;
+    /* Colors */
+    filter: invert(100%);
+  }
+  .burger-menu nav {
+    /* Display */
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.5rem;
+    transform: translateX(-110%);
+    transition: transform 0.3s, opacity 0.3s;
+    /* Spacers */
+    margin: 1.5rem 0 0 -0.5rem;
+    padding: 1rem;
+    /* Colors */
+    background-color: #0a0a0a;
+  }
+  .burger-menu.open nav {
+    /* Display */
+    transform: translateX(0);
+  }
+
+  /* Third Grade */
+
+  .burger-menu nav a {
+    /* Display */
+    user-select: none;
+    /* Spacers */
+    padding: 0.8rem 1rem;
+    /* Texts */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    /* Colors */
+    color: var(--text-color);
+  }
+}

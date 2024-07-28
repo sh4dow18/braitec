@@ -1,22 +1,47 @@
 /* Main Variables */
 
 :root {
-  --background-color: #0a0a0a;
-  --text-color: #fafafa;
-  --primary: #008ff5;
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --blue: #008ff5;
 }
+
+/* Main Tag Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
 * {
+  /* Spacers */
   margin: 0;
   padding: 0;
 }
-/* Main Tag Styles */
-/* sorted Alphabetically */
 body {
   /* Display */
   display: flex;
   flex-direction: column;
   height: 100dvh;
+  /* Text */
+  font-family: Arial, Helvetica, sans-serif;
 }
+footer {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Spacers */
+  padding: 1rem 10%;
+  /* Colors */
+  background-color: var(--black);
+  color: var(--white);
+}
+main {
+  /* Display */
+  flex: 1;
+}
+
+/* Second Grade */
+
 body > header {
   /* Display */
   display: flex;
@@ -28,45 +53,8 @@ body > header {
   /* Text */
   font-family: Arial, Helvetica, sans-serif;
   /* Colors */
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-body > header p {
-  font-size: 1.35rem;
-  font-weight: bold;
-  margin: 0;
-}
-.desktop-nav {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-}
-.desktop-nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: bold;
-  padding-inline: 1rem;
-  user-select: none;
-}
-.desktop-nav a:hover {
-  color: var(--primary);
-}
-main {
-  /* Display */
-  flex: 1;
-}
-footer {
-  /* Display */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* Spacers */
-  padding: 1rem 10%;
-  /* Text */
-  font-family: Arial, Helvetica, sans-serif;
-  /* Colors */
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--black);
+  color: var(--white);
 }
 footer > p {
   /* Display */
@@ -74,6 +62,47 @@ footer > p {
   /* Texts */
   font-size: 2rem;
   font-weight: bold;
+}
+
+/* Third Grade */
+
+body > header p {
+  /* Spacers */
+  margin: 0;
+  /* Texts */
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+/* Main Clases Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.desktop-nav {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  /* Texts */
+  font-size: 1.2rem;
+}
+
+/* Second Grade */
+
+.desktop-nav a {
+  /* Display */
+  user-select: none;
+  /* Spacers */
+  padding-inline: 1rem;
+  /* Texts */
+  text-decoration: none;
+  font-weight: bold;
+  /* Colors */
+  color: var(--white);
+}
+.desktop-nav a:hover {
+  /* Colors */
+  color: var(--blue);
 }
 
 /* Media Queries */
