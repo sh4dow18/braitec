@@ -1,7 +1,7 @@
 // Defines this Component as Client Component
 "use client";
 // Burger Menu Stylesheets
-import "@/stylesheets/layout/burger-menu.css";
+import "@/stylesheets/layout/header/burger-menu.css";
 // Burger Menu Requirements
 import Image from "next/image";
 import { useState } from "react";
