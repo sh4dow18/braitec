@@ -21,6 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100dvh;
+  /* Text */
+  font-family: Arial, Helvetica, sans-serif;
 }
 footer {
   /* Display */
@@ -29,11 +31,9 @@ footer {
   justify-content: center;
   /* Spacers */
   padding: 1rem 10%;
-  /* Text */
-  font-family: Arial, Helvetica, sans-serif;
   /* Colors */
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--black);
+  color: var(--white);
 }
 main {
   /* Display */
@@ -53,8 +53,8 @@ body > header {
   /* Text */
   font-family: Arial, Helvetica, sans-serif;
   /* Colors */
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--black);
+  color: var(--white);
 }
 footer > p {
   /* Display */
@@ -67,9 +67,11 @@ footer > p {
 /* Third Grade */
 
 body > header p {
+  /* Spacers */
+  margin: 0;
+  /* Texts */
   font-size: 1.35rem;
   font-weight: bold;
-  margin: 0;
 }
 
 /* Main Clases Styles */
@@ -78,22 +80,29 @@ body > header p {
 /* First Grade */
 
 .desktop-nav {
+  /* Display */
   display: flex;
   flex-wrap: wrap;
+  /* Texts */
   font-size: 1.2rem;
 }
 
 /* Second Grade */
 
 .desktop-nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: bold;
-  padding-inline: 1rem;
+  /* Display */
   user-select: none;
+  /* Spacers */
+  padding-inline: 1rem;
+  /* Texts */
+  text-decoration: none;
+  font-weight: bold;
+  /* Colors */
+  color: var(--white);
 }
 .desktop-nav a:hover {
-  color: var(--primary);
+  /* Colors */
+  color: var(--blue);
 }
 
 /* Media Queries */
