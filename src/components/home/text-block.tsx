@@ -1,5 +1,5 @@
 // Text Block Stylesheets
-import "@/stylesheets/presentation/text-block.css";
+import "@/stylesheets/components/home/text-block.css";
 // Text Block Props
 type Props = {
   title: string;

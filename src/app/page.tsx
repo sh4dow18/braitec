@@ -2,7 +2,7 @@
 import "@/stylesheets/pages/home.css";
 // Home Page Requirements
 import { Metadata } from "next";
-import { TextBlock } from "@/components/presentation";
+import { ImageBlock, TextBlock } from "@/components/home";
 // Home Page Metadata
 export const metadata: Metadata = {
   title: "Braitec: Soluciones Tecnológicas",
@@ -52,6 +52,23 @@ export default function Home() {
           </TextBlock>
         </div>
       </div>
+      {/* Competitive Advantage Section */}
+      <section className="advantage-container">
+        {/* Competitive Advantage Title */}
+        <h2>¿Qué Nos Diferencia?</h2>
+        {/* Competitive Advantage Image Blocks */}
+        <div>
+          <ImageBlock
+            title="Precios Competitivos"
+            image="competitive-prices.png"
+          />
+          <ImageBlock title="Ofertas y Combos" image="offers-and-combos.jpg" />
+          <ImageBlock
+            title="Programa de Fidelización"
+            image="fidelazation-program.jpg"
+          />
+        </div>
+      </section>
     </>
   );
 }
