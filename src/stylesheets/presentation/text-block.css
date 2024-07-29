@@ -1,0 +1,81 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.text-block-container {
+  /* Display */
+  width: 40rem;
+  /* Spacers */
+  margin: 2rem;
+}
+.text-block-container.center {
+  /* Texts */
+  text-align: center;
+}
+.text-block-container.right {
+  /* Texts */
+  text-align: right;
+}
+
+/* Second Grade */
+
+.text-block-container h2 {
+  /* Spacers */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  /* Texts */
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  /* Colors */
+  border-bottom: 2px solid var(--black);
+}
+.text-block-container p {
+  /* Texts */
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 1471px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .text-block-container {
+    /* Display */
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1151px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+  
+  .text-block-container {
+    /* Display */
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+  
+  .text-block-container {
+    /* Display */
+    width: auto;
+    /* Spacers */
+    margin: 1rem;
+  }
+}

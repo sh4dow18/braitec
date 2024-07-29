@@ -3,6 +3,15 @@
 
 /* First Grade */
 
+.main-information-container {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Spacers */
+  margin-inline: 2rem;
+}
+
 .presentation-container {
   /* Spacers */
   padding: 5%;
