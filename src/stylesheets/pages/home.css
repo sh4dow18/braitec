@@ -30,6 +30,10 @@ h2 {
   /* Spacers */
   margin-bottom: 1rem;
 }
+.benefits-container {
+  /* Spacers */
+  margin-bottom: 1rem;
+}
 
 .main-information-container {
   /* Display */
@@ -77,6 +81,20 @@ h2 {
   text-align: center;
 }
 .brand-features-container div {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.benefits-container h2 {
+  /* Display */
+  width: 84rem;
+  /* Spacers */
+  margin-inline: auto;
+  /* Texts */
+  text-align: center;
+}
+.benefits-container div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
@@ -131,6 +149,10 @@ h2 {
   /* Spacers */
   margin-inline: 7%;
 }
+.benefits-container div section:nth-child(2) {
+  /* Spacers */
+  margin-inline: 7%;
+}
 
 /* Media Queries */
 /* Sorted by Max Width */
@@ -146,6 +168,10 @@ h2 {
     width: 65rem;
   }
   .brand-features-container h2 {
+    /* Display */
+    width: 65rem;
+  }
+  .benefits-container h2 {
     /* Display */
     width: 65rem;
   }
@@ -172,6 +198,10 @@ h2 {
     /* Display */
     width: 55rem;
   }
+  .benefits-container h2 {
+    /* Display */
+    width: 55rem;
+  }
 
   /* Third Grade */
 
@@ -180,6 +210,10 @@ h2 {
     margin-inline: 1rem;
   }
   .brand-features-container div section:nth-child(2) {
+    /* Spacers */
+    margin-inline: 1rem;
+  }
+  .benefits-container div section:nth-child(2) {
     /* Spacers */
     margin-inline: 1rem;
   }
@@ -199,6 +233,10 @@ h2 {
     /* Spacers */
     margin: 2rem 3rem;
   }
+  .benefits-container {
+    /* Spacers */
+    margin: 2rem 3rem;
+  }
 
   /* Second Grade */
 
@@ -210,10 +248,18 @@ h2 {
     /* Display */
     width: auto;
   }
+  .benefits-container h2 {
+    /* Display */
+    width: auto;
+  }
 
   /* Third Grade */
 
   .advantage-container div :nth-child(3) {
+    /* Display */
+    width: 34rem;
+  }
+  .benefits-container div :nth-child(3) {
     /* Display */
     width: 34rem;
   }
@@ -230,6 +276,10 @@ h2 {
     width: 22rem;
   }
   .brand-features-container div section {
+    /* Display */
+    width: 22rem;
+  }
+  .benefits-container div :is(section, :nth-child(3)) {
     /* Display */
     width: 22rem;
   }

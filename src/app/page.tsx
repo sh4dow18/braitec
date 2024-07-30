@@ -81,6 +81,20 @@ export default function Home() {
           <ImageBlock title="Excelente Servicio" image="client-service.jpg" />
         </div>
       </section>
+      {/* Benefits Section */}
+      <section className="benefits-container">
+        {/* Benefits Title */}
+        <h2>Nuestros Beneficios</h2>
+        {/* Benefits Content */}
+        <div>
+          <ImageBlock
+            title="Soluciones Completas"
+            image="complete-solutions.jpg"
+          />
+          <ImageBlock title="Máximo Ahorro" image="maximum-savings.jpg" />
+          <ImageBlock title="Gran Fiabilidad" image="reliability.png" />
+        </div>
+      </section>
     </>
   );
 }
