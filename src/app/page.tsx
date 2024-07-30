@@ -78,7 +78,7 @@ export default function Home() {
           <ImageBlock title="Innovación" image="innovation.png" />
           <ImageBlock title="Calidad" image="quality.jpg" />
           <ImageBlock title="Eficiencia" image="efficiency.png" />
-          <ImageBlock title="Excelente Servicio" image="client-service.jpg[" />
+          <ImageBlock title="Excelente Servicio" image="client-service.jpg" />
         </div>
       </section>
     </>
