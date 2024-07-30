@@ -35,6 +35,18 @@ footer {
   background-color: var(--black);
   color: var(--white);
 }
+h2 {
+  /* Spacers */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  /* Texts */
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  /* Colors */
+  border-bottom: 2px solid var(--black);
+}
 main {
   /* Display */
   flex: 1;

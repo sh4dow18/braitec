@@ -3,7 +3,7 @@
 
 /* First Grade */
 
-.image-block-container {
+.image-section-container {
   /* Display */
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 
 /* Second Grade */
 
-.image-block-container h3 {
+.image-section-container h3 {
   /* Display */
   order: 2;
   /* Spacers */
@@ -32,7 +32,7 @@
   /* Colors */
   border-bottom: 2px dashed var(--black);
 }
-.image-block-container img {
+.image-section-container img {
   /* Display */
   order: 1;
   border-radius: 10rem;

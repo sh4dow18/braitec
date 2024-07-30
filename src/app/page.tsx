@@ -1,8 +1,9 @@
 // Home Page Stylesheets
+import { ImageSection, TextSection } from "@/components";
+import ImagesListSection from "@/components/images-list-section";
 import "@/stylesheets/pages/home.css";
 // Home Page Requirements
 import { Metadata } from "next";
-import { ImageBlock, TextBlock } from "@/components/home";
 // Home Page Metadata
 export const metadata: Metadata = {
   title: "Braitec: Soluciones Tecnológicas",
@@ -26,7 +27,7 @@ export default function Home() {
       </section>
       <div className="main-information-container">
         {/* Business Definition (Who Are We?) Text Block */}
-        <TextBlock title="¿Quiénes Somos?">
+        <TextSection title="¿Quiénes Somos?">
           Braitec es una empresa dedicada a ofrecer servicios tecnológicos
           especializados en la reparación de computadoras, la reparación de
           software de celulares y el desarrollo de software personalizado para
@@ -36,65 +37,60 @@ export default function Home() {
           la calidad y la eficiencia, buscamos ser un aliado confiable para
           individuos y pequeñas empresas, ofreciendo servicios a precios
           competitivos y con un alto nivel de personalización.
-        </TextBlock>
+        </TextSection>
         {/* Mision and Vision Division */}
         <div>
           {/* Mision Text Block */}
-          <TextBlock title="Nuestra Misión">
+          <TextSection title="Nuestra Misión">
             Proporcionar soluciones innovadoras y personalizadas, superando las
             expectativas en términos de calidad, rapidez y servicio al cliente
-          </TextBlock>
-          {/* Vision Text Block¬ */}
-          <TextBlock title="Nuestra Visión" align="right">
+          </TextSection>
+          {/* Vision Text Block */}
+          <TextSection title="Nuestra Visión" align="right">
             Convertirnos en una empresa líder y reconocida en el ámbito
             tecnológico, brindando confianza a nuestros clientes y destacándonos
             por nuestra capacidad de mejora continua e innovación constante
-          </TextBlock>
+          </TextSection>
         </div>
       </div>
-      {/* Competitive Advantage Section */}
-      <section className="advantage-container">
-        {/* Competitive Advantage Title */}
-        <h2>¿Qué Nos Diferencia?</h2>
-        {/* Competitive Advantage Image Blocks */}
-        <div>
-          <ImageBlock
-            title="Precios Competitivos"
-            image="competitive-prices.png"
-          />
-          <ImageBlock title="Ofertas y Combos" image="offers-and-combos.jpg" />
-          <ImageBlock
-            title="Programa de Fidelización"
-            image="fidelazation-program.jpg"
-          />
-        </div>
-      </section>
-      {/* Brand Features Section */}
-      <section className="brand-features-container">
-        {/* Brand Features Title */}
-        <h2>¿Qué Nos Caracteriza?</h2>
-        {/* Brade Features Content */}
-        <div>
-          <ImageBlock title="Innovación" image="innovation.png" />
-          <ImageBlock title="Calidad" image="quality.jpg" />
-          <ImageBlock title="Eficiencia" image="efficiency.png" />
-          <ImageBlock title="Excelente Servicio" image="client-service.jpg" />
-        </div>
-      </section>
+      {/* Competitive Advantages Section */}
+      <ImagesListSection title="¿Qué Nos Diferencia?">
+        {/* Competitive Prices Image Section */}
+        <ImageSection
+          title="Precios Competitivos"
+          image="competitive-prices.png"
+        />
+        {/* Offers & Combos Image Section */}
+        <ImageSection title="Ofertas y Combos" image="offers-and-combos.jpg" />
+        {/* Fidelazation Program Image Section */}
+        <ImageSection
+          title="Programa de Fidelización"
+          image="fidelazation-program.jpg"
+        />
+      </ImagesListSection>
       {/* Benefits Section */}
-      <section className="benefits-container">
-        {/* Benefits Title */}
-        <h2>Nuestros Beneficios</h2>
-        {/* Benefits Content */}
-        <div>
-          <ImageBlock
-            title="Soluciones Completas"
-            image="complete-solutions.jpg"
-          />
-          <ImageBlock title="Máximo Ahorro" image="maximum-savings.jpg" />
-          <ImageBlock title="Gran Fiabilidad" image="reliability.png" />
-        </div>
-      </section>
+      <ImagesListSection title="Nuestros Beneficios">
+        {/* Complete Solutions Image Section */}
+        <ImageSection
+          title="Soluciones Completas"
+          image="complete-solutions.jpg"
+        />
+        {/* Maximum Savings Image Section */}
+        <ImageSection title="Máximo Ahorro" image="maximum-savings.jpg" />
+        {/* Reliability Image Section */}
+        <ImageSection title="Gran Fiabilidad" image="reliability.png" />
+      </ImagesListSection>
+      {/* Brand Features Section */}
+      <ImagesListSection title="¿Qué Nos Caracteriza?">
+        {/* Innovation Image Section */}
+        <ImageSection title="Innovación" image="innovation.png" />
+        {/* Quality Image Section */}
+        <ImageSection title="Calidad" image="quality.jpg" />
+        {/* Efficiency Image Section */}
+        <ImageSection title="Eficiencia" image="efficiency.png" />
+        {/* Client Service Image Section */}
+        <ImageSection title="Excelente Servicio" image="client-service.jpg" />
+      </ImagesListSection>
     </>
   );
 }
