@@ -79,7 +79,10 @@ export default function RootLayout({
             {/* Creator's Signature */}
             <p>
               Página hecha por{" "}
-              <Link href="https://digital-me.vercel.app">Ramsés Solano</Link>
+              <Link href="https://digital-me.vercel.app">Ramsés Solano</Link> en{" "}
+              <Link href="https://braitec.vercel.app">
+                Braitec: Soluciones Tecnológicas
+              </Link>
             </p>
             {/* Braitec Copyright */}
             <p>
@@ -88,7 +91,7 @@ export default function RootLayout({
                 Braitec: Soluciones Tecnológicas
               </Link>{" "}
               {/* Last Update */}
-              26 de Julio del 2024
+              30 de Julio del 2024
             </p>
           </FooterSection>
         </footer>

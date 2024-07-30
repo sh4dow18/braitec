@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 1525px) {
+@media screen and (max-width: 1575px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
@@ -91,4 +91,28 @@
     /* Texts */
     text-align: center;
   }
+}
+@media screen and (max-width: 641px) {
+  .footer-credits-section {
+    margin-inline: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 484px) {
+  .footer-credits-section {
+    margin-inline: 0;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 414px) {
+   .footer-credits-section {
+    margin-inline: 0.1rem;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 363px) {
+  .footer-credits-section {
+   margin-inline: 0.2rem;
+   font-size: 0.5rem;
+ }
 }
