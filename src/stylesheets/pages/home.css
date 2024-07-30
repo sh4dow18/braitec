@@ -26,6 +26,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.brand-features-container {
+  /* Spacers */
+  margin-bottom: 1rem;
+}
+
 .main-information-container {
   /* Display */
   display: flex;
@@ -58,6 +63,20 @@ h2 {
   text-align: center;
 }
 .advantage-container div {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.brand-features-container h2 {
+  /* Display */
+  width: 84rem;
+  /* Spacers */
+  margin-inline: auto;
+  /* Texts */
+  text-align: center;
+}
+.brand-features-container div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +145,17 @@ h2 {
     /* Display */
     width: 65rem;
   }
+  .brand-features-container h2 {
+    /* Display */
+    width: 65rem;
+  }
+
+  /* Third Grade */
+
+  .brand-features-container div :nth-child(2) {
+    /* Spacers */
+    margin-inline: 7%;
+  }
 }
 
 @media screen and (max-width: 1151px) {
@@ -138,10 +168,18 @@ h2 {
     /* Display */
     width: 55rem;
   }
+  .brand-features-container h2 {
+    /* Display */
+    width: 55rem;
+  }
 
   /* Third Grade */
 
   .advantage-container div section:nth-child(2) {
+    /* Spacers */
+    margin-inline: 1rem;
+  }
+  .brand-features-container div section:nth-child(2) {
     /* Spacers */
     margin-inline: 1rem;
   }
@@ -157,10 +195,18 @@ h2 {
     /* Spacers */
     margin: 2rem 3rem
   }
+  .brand-features-container {
+    /* Spacers */
+    margin: 2rem 3rem;
+  }
 
   /* Second Grade */
 
   .advantage-container h2 {
+    /* Display */
+    width: auto;
+  }
+  .brand-features-container h2 {
     /* Display */
     width: auto;
   }
@@ -180,6 +226,10 @@ h2 {
   /* Third Grade */
 
   .advantage-container div :is(section, :nth-child(3)) {
+    /* Display */
+    width: 22rem;
+  }
+  .brand-features-container div section {
     /* Display */
     width: 22rem;
   }

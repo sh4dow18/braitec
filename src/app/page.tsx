@@ -69,6 +69,18 @@ export default function Home() {
           />
         </div>
       </section>
+      {/* Brand Features Section */}
+      <section className="brand-features-container">
+        {/* Brand Features Title */}
+        <h2>¿Qué Nos Caracteriza?</h2>
+        {/* Brade Features Content */}
+        <div>
+          <ImageBlock title="Innovación" image="innovation.png" />
+          <ImageBlock title="Calidad" image="quality.jpg" />
+          <ImageBlock title="Eficiencia" image="efficiency.png" />
+          <ImageBlock title="Excelente Servicio" image="client-service.jpg[" />
+        </div>
+      </section>
     </>
   );
 }
