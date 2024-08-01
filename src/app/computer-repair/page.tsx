@@ -20,6 +20,47 @@ function ComputerRepair() {
         title="Computadoras"
         subtitle="Aquí se muestran todos los servicios, combos, ofertas y megacombos relacionados con la Reparación de Computadoras"
       />
+      <ServicesListSection title="Ofertas">
+        <ServiceSection
+          title="Programas Conjuntos"
+          image="program-installation.jpg"
+          price={10000}
+          anotherPrice={{
+            value: 15000,
+            type: "separately",
+          }}
+          amount={{
+            value: 5,
+            service: "Instalación de Programa",
+          }}
+        />
+        <ServiceSection
+          title="Técnico al Servicio"
+          image="technician-at-service.jpg"
+          price={7000}
+          anotherPrice={{
+            value: 9000,
+            type: "separately",
+          }}
+          amount={{
+            value: 3,
+            service: "Asistencia Técnica por Hora",
+          }}
+        />
+        <ServiceSection
+          title="Gamer con Licencia"
+          image="gamer-with-license.webp"
+          price={10000}
+          anotherPrice={{
+            value: 15000,
+            type: "separately",
+          }}
+          amount={{
+            value: 5,
+            service: "Instalación de Videojuegos",
+          }}
+        />
+      </ServicesListSection>
       {/* Services List Section */}
       <ServicesListSection title="Servicios">
         {/* Computer Diagnosis Service Section */}
