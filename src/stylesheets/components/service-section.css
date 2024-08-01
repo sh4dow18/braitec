@@ -1,0 +1,52 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.service-section-container {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 1rem;
+  /* Spacers */
+  margin: 1rem 1rem 2rem;
+  /* Texts */
+  text-align: center;
+  /* Colors */
+  border: 1px solid var(--black);
+  box-shadow: 0px 0px 10px var(--black);
+}
+
+/* Second Grade */
+
+.service-section-container h3 {
+  /* Display */
+  order: 2;
+  width: 98%;
+  height: 3rem;
+  align-content: center;
+  /* Spacers */
+  margin: 0.5rem 0;
+  padding-bottom: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.service-section-container img {
+  /* Display */
+  order: 1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.service-section-container p {
+  /* Display */
+  order: 3;
+  /* Spacers */
+  margin-bottom: 0.5rem;
+  /* Texts */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
