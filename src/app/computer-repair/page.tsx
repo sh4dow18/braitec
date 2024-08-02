@@ -230,6 +230,27 @@ function ComputerRepair() {
           price={3000}
         />
       </ServicesListSection>
+      {/* Special Services Service List Section */}
+      <ServicesListSection title="Servicios Especiales">
+        {/* Purchase and Collection of Small Components Service Section */}
+        <ServiceSection
+          title="Compra y Recogida de Componentes Pequeños"
+          image="backpack.webp"
+          price={2000}
+        />
+        {/* Purchase and Collection of Large Components Service Section */}
+        <ServiceSection
+          title="Compra y Recogida de Componentes Grandes"
+          image="car.jpg"
+          price={6000}
+        />
+        {/* Home Service Service Section */}
+        <ServiceSection
+          title="Servicio a Domicilio"
+          image="home-service.webp"
+          price={5000}
+        />
+      </ServicesListSection>
     </>
   );
 }
