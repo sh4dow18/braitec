@@ -20,6 +20,40 @@ function ComputerRepair() {
         title="Computadoras"
         subtitle="Aquí se muestran todos los servicios, combos, ofertas y megacombos relacionados con la Reparación de Computadoras"
       />
+      {/* Combos Services List Section */}
+      <ServicesListSection title="Combos">
+        {/* War Machine Service Section */}
+        <ServiceSection
+          title="Máquina de Guerra"
+          image="war-machine.webp"
+          price={30000}
+          anotherPrice={{
+            value: 40000,
+            type: "separately",
+          }}
+          servicesList={[
+            "Asesoria de Computadora Ideal",
+            "Ensamble de Computadora",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+        />
+        {/* Remembering the Past Service Section */}
+        <ServiceSection
+          title="Recordando el Pasado"
+          image="remembering-the-past.jpg"
+          price={25000}
+          anotherPrice={{
+            value: 35000,
+            type: "separately",
+          }}
+          servicesList={[
+            "Cambio de Componente Existente",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+        />
+      </ServicesListSection>
       <ServicesListSection title="Ofertas">
         <ServiceSection
           title="Programas Conjuntos"

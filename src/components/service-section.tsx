@@ -15,9 +15,17 @@ type Props = {
     value: number;
     service: string;
   };
+  servicesList?: string[];
 };
 // Service Section Main Function
-function ServiceSection({ title, image, price, anotherPrice, amount }: Props) {
+function ServiceSection({
+  title,
+  image,
+  price,
+  anotherPrice,
+  amount,
+  servicesList,
+}: Props) {
   // Transform Price from "10000" to "₡ 10,000.00"
   const FORMATTED_PRICE = `₡ ${price.toLocaleString("en-CR")}.00`;
   // Return Service Section Component
@@ -39,6 +47,20 @@ function ServiceSection({ title, image, price, anotherPrice, amount }: Props) {
           <p>{amount.service}</p>
           <p className="amount">{`Cantidad: ${amount.value}`}</p>
         </>
+      )}
+      {/* Service Section List of Services  */}
+      {servicesList && (
+        // Service Section Services Included
+        <section>
+          {/* Services Included Title */}
+          <h4>Servicios Incluidos</h4>
+          {/* Services Included Services List */}
+          <ul>
+            {servicesList.map((service, index) => (
+              <li key={index}>{service}</li>
+            ))}
+          </ul>
+        </section>
       )}
       {/* Service Section Price */}
       <p className="price">{FORMATTED_PRICE}</p>

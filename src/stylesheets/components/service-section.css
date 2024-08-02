@@ -45,16 +45,47 @@
   /* Display */
   order: 3;
   /* Spacers */
-  margin-bottom: 0.5rem;  
+  margin-bottom: 0.5rem;
+}
+.service-section-container section {
+  /* Display */
+  order: 3;
+  width: 100%;
+  height: 7rem;
+  align-content: center;
+  /* Spacers */
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
 }
 .service-section-container .amount {
-  border-bottom: 1px solid var(--black);
-  padding-bottom: 0.5rem;
+  /* Display */
   width: 100%;
+  /* Spacers */
+  padding-bottom: 0.5rem;
+  /* Texts */
   font-size: 1.1rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
 }
 .service-section-container .price {
   /* Texts */
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* Third Grade */
+
+.service-section-container section h4 {
+  /* Texts */
+  font-style: italic;
+}
+.service-section-container section ul {
+  /* Display */
+  list-style: none;
+}
+.service-section-container section ul li {
+  /* Spacers */
+  margin: 0.3rem 0;
 }
