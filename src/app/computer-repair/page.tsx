@@ -54,6 +54,42 @@ function ComputerRepair() {
           ]}
         />
       </ServicesListSection>
+      {/* Combos Services List Section */}
+      <ServicesListSection title="Mega Combos">
+        {/* War Machine Service Section */}
+        <ServiceSection
+          title="Yo soy Iron-Man"
+          image="i-am-iron-man.jpg"
+          price={40000}
+          anotherPrice={{
+            value: 50000,
+            type: "separately",
+          }}
+          servicesList={[
+            "Asesoria de Computadora Ideal",
+            "Ensamble de Computadora",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+          offersList={["Programas Conjuntos"]}
+        />
+        {/* Remembering the Past Service Section */}
+        <ServiceSection
+          title="Gemelo Perfecto"
+          image="perfect-twin.webp"
+          price={35000}
+          anotherPrice={{
+            value: 45000,
+            type: "separately",
+          }}
+          servicesList={[
+            "Cambio de Componente Existente",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+          offersList={["Programas Conjuntos"]}
+        />
+      </ServicesListSection>
       <ServicesListSection title="Ofertas">
         <ServiceSection
           title="Programas Conjuntos"

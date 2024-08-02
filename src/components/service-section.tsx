@@ -16,6 +16,7 @@ type Props = {
     service: string;
   };
   servicesList?: string[];
+  offersList?: string[];
 };
 // Service Section Main Function
 function ServiceSection({
@@ -25,6 +26,7 @@ function ServiceSection({
   anotherPrice,
   amount,
   servicesList,
+  offersList,
 }: Props) {
   // Transform Price from "10000" to "₡ 10,000.00"
   const FORMATTED_PRICE = `₡ ${price.toLocaleString("en-CR")}.00`;
@@ -58,6 +60,20 @@ function ServiceSection({
           <ul>
             {servicesList.map((service, index) => (
               <li key={index}>{service}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {/* Service Section List of Services  */}
+      {offersList && (
+        // Service Section Services Included
+        <section className="offers-container">
+          {/* Services Included Title */}
+          <h4>Ofertas Incluidas</h4>
+          {/* Services Included Services List */}
+          <ul>
+            {offersList.map((offer, index) => (
+              <li key={index}>{offer}</li>
             ))}
           </ul>
         </section>

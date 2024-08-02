@@ -74,6 +74,10 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+.service-section-container .offers-container {
+  /* Display */
+  height: 4rem;
+}
 
 /* Third Grade */
 
