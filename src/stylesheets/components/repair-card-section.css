@@ -1,0 +1,110 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.repair-card-section-container {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 1rem;
+  /* Spacers */
+  margin: 1rem 1rem 2rem;
+  /* Texts */
+  text-align: center;
+  /* Colors */
+  border: 1px solid var(--black);
+  box-shadow: 0px 0px 10px var(--black);
+}
+
+/* Second Grade */
+
+.repair-card-section-container h3 {
+  /* Display */
+  order: 2;
+  width: 100%;
+  height: 3rem;
+  align-content: center;
+  /* Spacers */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.repair-card-section-container img {
+  /* Display */
+  order: 1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.repair-card-section-container p {
+  /* Display */
+  order: 3;
+  /* Spacers */
+  margin-bottom: 0.5rem;
+}
+.repair-card-section-container .amount {
+  /* Display */
+  order: 2;
+  display: block;
+  width: 100%;
+  /* Spacers */
+  padding-top: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.repair-card-section-container .offers-container {
+  /* Display */
+  height: 4rem;
+}
+.repair-card-section-container .service-container {
+  /* Display */
+  height: 7rem;
+}
+.repair-card-section-container :is(.offers-container, .service-container) {
+  /* Display */
+  order: 3;
+  width: 100%;
+  align-content: center;
+  /* Spacers */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.repair-card-section-container .price {
+  /* Display */
+  order: 4;
+  /* Spacers */
+  padding-top: 0.5rem;
+}
+
+/* Third Grade */
+
+.repair-card-section-container section h4 {
+  /* Texts */
+  font-style: italic;
+}
+.repair-card-section-container section ul {
+  /* Display */
+  list-style: none;
+}
+.repair-card-section-container .price :nth-child(1) {
+  margin-bottom: 0.3rem;
+}
+.repair-card-section-container .price :nth-child(2) {
+  /* Texts */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Fourth Grade */
+
+.repair-card-section-container section ul li {
+  /* Spacers */
+  margin: 0.3rem 0;
+}

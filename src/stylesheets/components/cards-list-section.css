@@ -1,0 +1,22 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.cards-list-section-container {
+  /* Spacers */
+  margin: 2rem 5%;
+}
+
+/* Second Grade */
+
+.cards-list-section-container h2 {
+  /* Texts */
+  text-align: center;
+}
+.cards-list-section-container div {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
