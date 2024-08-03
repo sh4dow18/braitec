@@ -1,5 +1,5 @@
 // Service Section Stylesheets
-import "@/stylesheets/components/service-section.css";
+import "@/stylesheets/components/repair-card-section.css";
 // Service Section Requirements
 import Image from "next/image";
 // Service Section Props
@@ -16,10 +16,10 @@ type Props = {
     service: string;
   };
   servicesList?: string[];
-  offersList?: string[];
+  offersList?: { value: string; amount: number }[];
 };
 // Service Section Main Function
-function ServiceSection({
+function RepairCardSection({
   title,
   image,
   price,
@@ -29,31 +29,33 @@ function ServiceSection({
   offersList,
 }: Props) {
   // Transform Price from "10000" to "₡ 10,000.00"
-  const FORMATTED_PRICE = `₡ ${price.toLocaleString("en-CR")}.00`;
+  const FormatPrice = (newPrice: number) => {
+    return `₡ ${newPrice.toLocaleString("en-CR")}.00`;
+  };
   // Return Service Section Component
   return (
     // Service Section Main Container
-    <section className="service-section-container">
+    <section className="repair-card-section-container">
       {/* Service Section Title */}
       <h3>{title}</h3>
       {/* Service Section Image */}
       <Image
         src={`/${image}`}
-        alt={`Imagen ${title}`}
+        alt={`Imagen de ${title}`}
         width={300}
         height={200}
       />
       {/* Service Section Amount */}
       {amount && (
-        <>
+        <div className="amount">
           <p>{amount.service}</p>
-          <p className="amount">{`Cantidad: ${amount.value}`}</p>
-        </>
+          <p>{`Cantidad: ${amount.value}`}</p>
+        </div>
       )}
       {/* Service Section List of Services  */}
       {servicesList && (
         // Service Section Services Included
-        <section>
+        <section className="service-container">
           {/* Services Included Title */}
           <h4>Servicios Incluidos</h4>
           {/* Services Included Services List */}
@@ -73,21 +75,24 @@ function ServiceSection({
           {/* Services Included Services List */}
           <ul>
             {offersList.map((offer, index) => (
-              <li key={index}>{offer}</li>
+              <li key={index}>{`${offer.value} (x${offer.amount})`}</li>
             ))}
           </ul>
         </section>
       )}
-      {/* Service Section Price */}
-      <p className="price">{FORMATTED_PRICE}</p>
-      {/* Service Section Regular Price */}
-      {anotherPrice && (
-        <p className="regular-price">{`Precio ${
-          anotherPrice.type === "regular" ? "Regular" : "por Separado"
-        }: ₡${anotherPrice.value?.toLocaleString("en-CR")}.00`}</p>
-      )}
+      <section className="price">
+        <h4>Precio Apertura</h4>
+        {/* Service Section Price */}
+        <p>{FormatPrice(price)}</p>
+        {/* Service Section Regular Price */}
+        {anotherPrice && (
+          <p className="regular-price">{`Precio ${
+            anotherPrice.type === "regular" ? "Regular" : "por Separado"
+          }: ${FormatPrice(anotherPrice.value)}`}</p>
+        )}
+      </section>
     </section>
   );
 }
 
-export default ServiceSection;
+export default RepairCardSection;

@@ -3,7 +3,7 @@
 
 /* First Grade */
 
-.service-section-container {
+.repair-card-section-container {
   /* Display */
   display: flex;
   flex-direction: column;
@@ -21,19 +21,19 @@
 
 /* Second Grade */
 
-.service-section-container h3 {
+.repair-card-section-container h3 {
   /* Display */
   order: 2;
-  width: 98%;
+  width: 100%;
   height: 3rem;
   align-content: center;
   /* Spacers */
-  margin: 0.5rem 0;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   /* Colors */
   border-bottom: 1px solid var(--black);
 }
-.service-section-container img {
+.repair-card-section-container img {
   /* Display */
   order: 1;
   border-top-left-radius: 1rem;
@@ -41,55 +41,70 @@
   /* Colors */
   border-bottom: 1px solid var(--black);
 }
-.service-section-container p {
+.repair-card-section-container p {
   /* Display */
   order: 3;
   /* Spacers */
   margin-bottom: 0.5rem;
 }
-.service-section-container section {
+.repair-card-section-container .amount {
   /* Display */
-  order: 3;
+  order: 2;
+  display: block;
   width: 100%;
-  height: 7rem;
-  align-content: center;
   /* Spacers */
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
   /* Colors */
   border-bottom: 1px solid var(--black);
 }
-.service-section-container .amount {
-  /* Display */
-  width: 100%;
-  /* Spacers */
-  padding-bottom: 0.5rem;
-  /* Texts */
-  font-size: 1.1rem;
-  /* Colors */
-  border-bottom: 1px solid var(--black);
-}
-.service-section-container .price {
-  /* Texts */
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.service-section-container .offers-container {
+.repair-card-section-container .offers-container {
   /* Display */
   height: 4rem;
+}
+.repair-card-section-container .service-container {
+  /* Display */
+  height: 7rem;
+}
+.repair-card-section-container :is(.offers-container, .service-container) {
+  /* Display */
+  order: 3;
+  width: 100%;
+  align-content: center;
+  /* Spacers */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+.repair-card-section-container .price {
+  /* Display */
+  order: 4;
+  /* Spacers */
+  padding-top: 0.5rem;
 }
 
 /* Third Grade */
 
-.service-section-container section h4 {
+.repair-card-section-container section h4 {
   /* Texts */
   font-style: italic;
 }
-.service-section-container section ul {
+.repair-card-section-container section ul {
   /* Display */
   list-style: none;
 }
-.service-section-container section ul li {
+.repair-card-section-container .price :nth-child(1) {
+  margin-bottom: 0.3rem;
+}
+.repair-card-section-container .price :nth-child(2) {
+  /* Texts */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Fourth Grade */
+
+.repair-card-section-container section ul li {
   /* Spacers */
   margin: 0.3rem 0;
 }

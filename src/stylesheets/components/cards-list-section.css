@@ -3,18 +3,18 @@
 
 /* First Grade */
 
-.services-list-section-container {
+.cards-list-section-container {
   /* Spacers */
   margin: 2rem 5%;
 }
 
 /* Second Grade */
 
-.services-list-section-container h2 {
+.cards-list-section-container h2 {
   /* Texts */
   text-align: center;
 }
-.services-list-section-container div {
+.cards-list-section-container div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
