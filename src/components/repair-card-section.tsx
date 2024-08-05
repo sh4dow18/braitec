@@ -40,7 +40,7 @@ function RepairCardSection({
       <h3>{title}</h3>
       {/* Service Section Image */}
       <Image
-        src={`/${image}`}
+        src={`/repair/${image}.jpg`}
         alt={`Imagen de ${title}`}
         width={300}
         height={200}
