@@ -58,17 +58,17 @@ export default function Home() {
         {/* Competitive Prices Image Section */}
         <ImageSection
           title="Precios Competitivos"
-          image="misc/competitive-prices.png"
+          image="competitive-prices"
         />
         {/* Offers & Combos Image Section */}
         <ImageSection
           title="Ofertas y Combos"
-          image="misc/offers-and-combos.jpg"
+          image="offers-and-combos"
         />
         {/* Fidelazation Program Image Section */}
         <ImageSection
           title="Programa de Fidelización"
-          image="misc/fidelazation-program.jpg"
+          image="fidelazation-program"
         />
       </ImagesListSection>
       {/* Benefits Section */}
@@ -76,25 +76,25 @@ export default function Home() {
         {/* Complete Solutions Image Section */}
         <ImageSection
           title="Soluciones Completas"
-          image="misc/complete-solutions.jpg"
+          image="complete-solutions"
         />
         {/* Maximum Savings Image Section */}
-        <ImageSection title="Máximo Ahorro" image="misc/maximum-savings.jpg" />
+        <ImageSection title="Máximo Ahorro" image="maximum-savings" />
         {/* Reliability Image Section */}
-        <ImageSection title="Gran Fiabilidad" image="misc/reliability.png" />
+        <ImageSection title="Gran Fiabilidad" image="reliability" />
       </ImagesListSection>
       {/* Brand Features Section */}
       <ImagesListSection title="¿Qué Nos Caracteriza?">
         {/* Innovation Image Section */}
-        <ImageSection title="Innovación" image="misc/innovation.png" />
+        <ImageSection title="Innovación" image="innovation" />
         {/* Quality Image Section */}
-        <ImageSection title="Calidad" image="misc/quality.jpg" />
+        <ImageSection title="Calidad" image="quality" />
         {/* Efficiency Image Section */}
-        <ImageSection title="Eficiencia" image="misc/efficiency.png" />
+        <ImageSection title="Eficiencia" image="efficiency" />
         {/* Client Service Image Section */}
         <ImageSection
           title="Excelente Servicio"
-          image="misc/client-service.jpg"
+          image="client-service"
         />
       </ImagesListSection>
     </>

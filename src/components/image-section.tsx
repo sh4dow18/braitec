@@ -17,7 +17,7 @@ function ImageSection({ title, image }: Props) {
       {/* Image Section Content */}
       {/* Search Image in Public Folder */}
       <Image
-        src={`/${image}`}
+        src={`/misc/${image}.jpg`}
         alt={`Icono ${image}`}
         width={150}
         height={150}
