@@ -15,7 +15,7 @@ export default function RootLayout({
     <>
       <Link href="/">Inicio</Link>
       <Link href="/computer-repair">Computadoras</Link>
-      <Link href="/web-design">Páginas Web</Link>
+      <Link href="/web-development">Páginas Web</Link>
       <Link href="/cellphone-repair">Celulares</Link>
       <Link href="/local">Tienda</Link>
       <Link href="/contact">Contacto</Link>
