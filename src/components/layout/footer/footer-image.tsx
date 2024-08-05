@@ -19,7 +19,7 @@ function FooterImage({ link, icon, alt }: Props) {
       {/* Also, if alt is undefined, the icon name will be the alt */}
       {/* but changing "-" to " " and putting the first letter of each word in uppercase */}
       <Image
-        src={`/${icon}.svg`}
+        src={`/svgs/${icon}.svg`}
         alt={`Ícono ${
           alt
             ? alt

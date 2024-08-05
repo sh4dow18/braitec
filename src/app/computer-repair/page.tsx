@@ -25,7 +25,7 @@ function ComputerRepair() {
         {/* Programs Together Card Section */}
         <RepairCardSection
           title="Programas Conjuntos"
-          image="programs-together.jpg"
+          image="programs-together"
           price={10000}
           anotherPrice={{
             value: 15000,
@@ -39,7 +39,7 @@ function ComputerRepair() {
         {/* Technician at Service Card Section */}
         <RepairCardSection
           title="Técnico al Servicio"
-          image="technician-at-service.jpg"
+          image="technician-at-service"
           price={7000}
           anotherPrice={{
             value: 9000,
@@ -53,7 +53,7 @@ function ComputerRepair() {
         {/* Gamer with License Card Section */}
         <RepairCardSection
           title="Gamer con Licencia"
-          image="gamer-with-license.webp"
+          image="gamer-with-license"
           price={10000}
           anotherPrice={{
             value: 15000,
@@ -70,7 +70,7 @@ function ComputerRepair() {
         {/* War Machine Card Section */}
         <RepairCardSection
           title="Armado al Máximo"
-          image="armed-to-the-max.webp"
+          image="armed-to-the-max"
           price={30000}
           anotherPrice={{
             value: 50000,
@@ -86,7 +86,7 @@ function ComputerRepair() {
         {/* I am Fast Card Section */}
         <RepairCardSection
           title="Soy Veloz"
-          image="i-am-fast.jpeg"
+          image="i-am-fast"
           price={28000}
           anotherPrice={{
             value: 36000,
@@ -105,7 +105,7 @@ function ComputerRepair() {
         {/* War Machine Card Section */}
         <RepairCardSection
           title="Máquina de Guerra"
-          image="war-machine.webp"
+          image="war-machine"
           price={40000}
           anotherPrice={{
             value: 50000,
@@ -122,7 +122,7 @@ function ComputerRepair() {
         {/* Max Capacity Card Section */}
         <RepairCardSection
           title="Máxima Capacidad"
-          image="max-capacity.webp"
+          image="max-capacity"
           price={35000}
           anotherPrice={{
             value: 48000,
@@ -139,7 +139,7 @@ function ComputerRepair() {
         {/* War Machine Card Section */}
         <RepairCardSection
           title="Yo soy Iron-Man"
-          image="i-am-iron-man.jpg"
+          image="i-am-iron-man"
           price={50000}
           anotherPrice={{
             value: 70000,
@@ -159,7 +159,7 @@ function ComputerRepair() {
         {/* Unlimited Card Section */}
         <RepairCardSection
           title="Sin Límites"
-          image="unlimited.jpg"
+          image="unlimited"
           price={45000}
           anotherPrice={{
             value: 68000,
@@ -182,7 +182,7 @@ function ComputerRepair() {
         {/* Computer Diagnosis Card Section */}
         <RepairCardSection
           title="Diagnóstico de Computadora"
-          image="computer-diagnosis.jpg"
+          image="computer-diagnosis"
           price={3000}
           anotherPrice={{
             value: 5000,
@@ -192,7 +192,7 @@ function ComputerRepair() {
         {/* Ideal Computer Consulting Card Section */}
         <RepairCardSection
           title="Asesoría de Computadora Ideal"
-          image="ideal-computer-consulting.webp"
+          image="ideal-computer-consulting"
           price={7000}
           anotherPrice={{
             value: 10000,
@@ -202,7 +202,7 @@ function ComputerRepair() {
         {/* Computer Assembly Card Section */}
         <RepairCardSection
           title="Ensamble de Computadora"
-          image="computer-assembly.jpg"
+          image="computer-assembly"
           price={20000}
           anotherPrice={{
             value: 30000,
@@ -212,7 +212,7 @@ function ComputerRepair() {
         {/* Change of Existing Component Card Section */}
         <RepairCardSection
           title="Cambio de Componente Existente"
-          image="change-of-existing-component.jpg"
+          image="change-of-existing-component"
           price={6000}
           anotherPrice={{
             value: 10000,
@@ -222,7 +222,7 @@ function ComputerRepair() {
         {/* Normal Desktop Cleaning Card Section */}
         <RepairCardSection
           title="Limpieza Normal de Computadora de Escritorio"
-          image="normal-desktop-cleaning.webp"
+          image="normal-desktop-cleaning"
           price={10000}
           anotherPrice={{
             value: 15000,
@@ -232,7 +232,7 @@ function ComputerRepair() {
         {/* Deep Cleaning of Desktop Computer Card Section */}
         <RepairCardSection
           title="Limpieza Profunda de Computadora de Escritorio"
-          image="deep-cleaning-of-desktop-computer.webp"
+          image="deep-cleaning-of-desktop-computer"
           price={30000}
           anotherPrice={{
             value: 40000,
@@ -242,7 +242,7 @@ function ComputerRepair() {
         {/* Normal Laptop Cleaning Card Section */}
         <RepairCardSection
           title="Limpieza Normal de Laptop"
-          image="normal-laptop-cleaning.webp"
+          image="normal-laptop-cleaning"
           price={5000}
           anotherPrice={{
             value: 8000,
@@ -252,7 +252,7 @@ function ComputerRepair() {
         {/* Laptop Deep Cleaning Card Section */}
         <RepairCardSection
           title="Limpieza Profunda de Laptop"
-          image="laptop-deep-cleaning.webp"
+          image="laptop-deep-cleaning"
           price={12000}
           anotherPrice={{
             value: 15000,
@@ -262,7 +262,7 @@ function ComputerRepair() {
         {/* Operative System Installation Card Section */}
         <RepairCardSection
           title="Instalación de Sistema Operativo"
-          image="operative-system-installation.jpg"
+          image="operative-system-installation"
           price={15000}
           anotherPrice={{
             value: 20000,
@@ -272,7 +272,7 @@ function ComputerRepair() {
         {/* Windows Optimization Card Section */}
         <RepairCardSection
           title="Optimización de Windows"
-          image="windows-optimization.webp"
+          image="windows-optimization"
           price={8000}
           anotherPrice={{
             value: 12000,
@@ -282,7 +282,7 @@ function ComputerRepair() {
         {/* Program Installation Card Section */}
         <RepairCardSection
           title="Instalación de Programa"
-          image="program-installation.webp"
+          image="program-installation"
           price={3000}
           anotherPrice={{
             value: 5000,
@@ -292,7 +292,7 @@ function ComputerRepair() {
         {/* File Transfer Card Section */}
         <RepairCardSection
           title="Traspaso de Archivos"
-          image="file-transfer.avif"
+          image="file-transfer"
           price={7000}
           anotherPrice={{
             value: 10000,
@@ -302,7 +302,7 @@ function ComputerRepair() {
         {/* Virus Cleaning Card Section */}
         <RepairCardSection
           title="Limpieza de Virus"
-          image="virus-cleaning.png"
+          image="virus-cleaning"
           price={10000}
           anotherPrice={{
             value: 15000,
@@ -312,7 +312,7 @@ function ComputerRepair() {
         {/* File Recovery Card Section */}
         <RepairCardSection
           title="Recuperación de Archivos"
-          image="file-recovery.jpg"
+          image="file-recovery"
           price={18000}
           anotherPrice={{
             value: 25000,
@@ -322,7 +322,7 @@ function ComputerRepair() {
         {/* Technical Assistance Card Section */}
         <RepairCardSection
           title="Asistencia Técnica por Hora"
-          image="technical-assistance.png"
+          image="technical-assistance"
           price={3000}
           anotherPrice={{
             value: 5000,
@@ -332,7 +332,7 @@ function ComputerRepair() {
         {/* Video Game Installation Card Section */}
         <RepairCardSection
           title="Instalación de Videojuegos"
-          image="video-game-installation.webp"
+          image="video-game-installation"
           price={3000}
           anotherPrice={{
             value: 5000,
@@ -345,19 +345,19 @@ function ComputerRepair() {
         {/* Purchase and Collection of Small Components Card Section */}
         <RepairCardSection
           title="Compra y Recogida de Componentes Pequeños"
-          image="backpack.webp"
+          image="backpack"
           price={2000}
         />
         {/* Purchase and Collection of Large Components Card Section */}
         <RepairCardSection
           title="Compra y Recogida de Componentes Grandes"
-          image="car.jpg"
+          image="car"
           price={6000}
         />
         {/* Home Service Card Section */}
         <RepairCardSection
           title="Servicio a Domicilio"
-          image="home-service.webp"
+          image="home-service"
           price={5000}
         />
       </CardsListSection>
