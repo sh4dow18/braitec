@@ -1,0 +1,75 @@
+// Table Stylesheets
+import "@/stylesheets/components/table.css";
+// Table Requirements
+import Image from "next/image";
+// Table Types
+type TableHeaders = {
+  name: string;
+  image: string;
+}[];
+type TableRow = {
+  name: string;
+  dataList: (string | boolean)[];
+}[];
+// Table Props
+type Props = {
+  headersList: TableHeaders;
+  rowsList: TableRow;
+};
+// Table Get Symbol function that gets a boolean and return a symbol
+const GetSymbol = (element: boolean) => {
+  return element ? "✓" : "✗";
+};
+// Table Main Function
+function Table({ headersList, rowsList }: Props) {
+  // Returns Table Component
+  return (
+    <table className="table-container">
+      <thead>
+        <tr>
+          {/* Blank Table Header, because a Blank Space is Needed */}
+          <th scope="col"></th>
+          {/* Displays Each Item as a Column Header */}
+          {/* The Images Must be in a Public Folder */}
+          {headersList.map((header, index) => (
+            <th key={index} scope="col">
+              <Image
+                src={`/${header.image}.jpg`}
+                alt={`Imagen de ${header.name}`}
+                width={150}
+                height={150}
+              />
+              <p>{header.name}</p>
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {/* Displays Each Item as a Row */}
+        {rowsList.map((row, index) => (
+          <tr key={index}>
+            {/* Shows Row Name First */}
+            <th scope="row">{row.name}</th>
+            {/* Displays Each Item as a Row Data */}
+            {row.dataList.map((data, dataIndex) => (
+              // If the Data is Boolean, Displays a Symbol
+              // If the Data is True, It Displays a Green Tick, if not, a Red Cross.
+              <td
+                key={dataIndex}
+                className={
+                  typeof data === "boolean"
+                    ? `symbol ${data ? "green" : "red"}`
+                    : undefined
+                }
+              >
+                {typeof data === "boolean" ? GetSymbol(data) : data}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+export default Table;
