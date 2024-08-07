@@ -4,54 +4,69 @@
 /* First Grade */
 
 .table-container {
-  /* Display */
-  border-collapse: collapse;
-  /* Spacers */
-  margin: 1rem auto 2rem;
   /* Texts */
   text-align: center;
 }
 
 /* Second Grade */
 
-.table-container :is(th, td) {
+.table-container div {
+  /* Display */
+  overflow-x: scroll;
+}
+.table-container > p {
+  display: none;
+}
+
+/* Third Grade */
+
+.table-container div table {
+  /* Display */
+  border-collapse: collapse;
+  /* Spacers */
+  margin: 1rem auto 2rem;
+}
+
+/* Fourth Grade */
+
+.table-container div table :is(th, td) {
   /* Display */
   height: 1.5rem;
   /* Spacers */
   padding: 1rem;
 }
-.table-container tr {
+.table-container div table tr {
   /* Colors */
   border-bottom: 1px solid var(--black);
 }
 
-/* Third Grade */
+/* Fifth Grade */
 
-.table-container tbody tr:last-child {
+.table-container div table tbody tr:last-child {
   /* Texts */
   font-size: 1.2rem;
   font-weight: bold;
   /* Colors */
   border-bottom: none;
 }
-.table-container tbody .symbol {
+.table-container div table tbody .symbol {
   /* Texts */
   font-size: 1.5rem;
   /* Colors */
   text-shadow: 0 0 1px var(--black);
 }
-.table-container tbody .symbol.red {
+.table-container div table tbody .symbol.red {
   /* Colors */
   color: #ff0000;
 }
-.table-container tbody .symbol.green {
+.table-container div table tbody .symbol.green {
   /* Colors */
   color: #00cc00;
 }
 
-/* Fourth Grade */
+/* Sixth Grade */
 
-.table-container thead th img {
+.table-container div table thead th img {
   /* Display */
   border-radius: 1rem;
   /* Spacers */
@@ -60,9 +75,34 @@
   border: 1px solid var(--black);
   box-shadow: 0 0 3px var(--black);
 }
-.table-container thead th p {
+.table-container div table thead th p {
   /* Texts */
   font-size: 1.2rem;
   font-style: italic;
   font-variant: small-caps;
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 1245px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .table-container > p {
+    display: block
+  }
+}
+
+@media screen and (max-width: 1356px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Sixth Grade */
+
+  .table-container div table thead th p {
+    font-size: 1.1rem;
+  }
 }
