@@ -1,0 +1,25 @@
+/* Main Tags Styles */
+/* Sorted Alphabetically */
+
+/* Second Grade */
+
+section h2 {
+  /* Spacers */
+  margin: 2rem 7% 1rem;
+  /* Texts */
+  text-align: center;
+}
+section div {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section div img {
+  /* Spacers */
+  margin-inline: 1rem;
+  /* Colors */
+  box-shadow: 0 0 5px var(--black);
+  border-radius: 2rem;
+}
