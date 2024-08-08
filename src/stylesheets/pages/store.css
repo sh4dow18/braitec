@@ -3,23 +3,47 @@
 
 /* Second Grade */
 
+section div {
+  /* Spacers */
+  margin-bottom: 0.5rem;
+  /* Texts */
+  text-align: center;
+}
 section h2 {
   /* Spacers */
   margin: 2rem 7% 1rem;
   /* Texts */
   text-align: center;
 }
-section div {
+
+/* Third Grade */
+
+section div div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-section div img {
+section div > p {
+  /* Display */
+  width: 43rem;
+  /* Spacers */
+  margin: 0 auto 1rem;
+  padding-bottom: 1rem;
+  /* Texts */
+  text-align: center;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+
+/* Fourth Grade */
+
+section div div img {
+  /* Display */
+  border-radius: 1rem;
   /* Spacers */
   margin-inline: 1rem;
   /* Colors */
-  box-shadow: 0 0 5px var(--black);
-  border-radius: 2rem;
+  border: 1px solid var(--black);
 }
