@@ -12,7 +12,7 @@
 
 .table-container div {
   /* Display */
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .table-container > p {
   display: none;
@@ -24,7 +24,7 @@
   /* Display */
   border-collapse: collapse;
   /* Spacers */
-  margin: 1rem auto 2rem;
+  margin-inline: auto;
 }
 
 /* Fourth Grade */
