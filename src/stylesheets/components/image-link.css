@@ -1,0 +1,39 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
+.image-link-container {
+  /* Display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  /* Spacers */
+  margin-inline: 0.5rem;
+  /* Texts */
+  text-decoration: none;
+  /* Colors */
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.image-link-container:hover {
+  /* Colors */
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* Second Grade */
+
+.image-link-container img {
+  border-right: 1px solid var(--black);
+  padding: 0.5rem 0.3rem 0.5rem 0.5rem;
+}
+.image-link-container:hover img {
+  /* Colors */
+  filter: invert(100%);
+}
+.image-link-container p {
+  /* Spacers */
+  padding: 0.5rem 0.8rem 0.5rem 0.5rem;
+}

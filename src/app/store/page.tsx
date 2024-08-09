@@ -2,7 +2,7 @@
 import "@/stylesheets/pages/store.css";
 // Store Page Requirements
 import { Metadata } from "next";
-import { Table, TitleSection } from "@/components";
+import { ImageLink, Table, TitleSection } from "@/components";
 import Image from "next/image";
 // Store Page Metadata
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ function Store() {
             Mano Derecha Portón Negro, Rincón Herrera, Guácima, Alajuela,
             Alajuela, Costa Rica, 20105
           </p>
-          <div>
+          <div className="schedule-container">
             <Image
               src="/misc/store.jpg"
               alt="Imagen de Tienda"
@@ -73,6 +73,27 @@ function Store() {
               ]}
               regularLastChild
               smallData
+            />
+          </div>
+          {/* Links Container */}
+          <div className="links-container">
+            {/* Google Maps Image Link */}
+            <ImageLink
+              name="Google Maps"
+              url="https://maps.app.goo.gl/Uh3aYiwm8Y6PHUsj7"
+              svg="google-maps"
+            />
+            {/* Uber Image Link */}
+            <ImageLink
+              name="Uber"
+              url="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=9.9799299&dropoff[longitude]=-84.2412363&dropoff[nickname]=Braitec:%20Soluciones%20Tecnológicas"
+              svg="uber"
+            />
+            {/* Waze Image Link */}
+            <ImageLink
+              name="Waze"
+              url="https://www.waze.com/en/live-map/directions/cr/alajuela-province/alajuela/braitec-soluciones-tecnologicas?navigate=yes&place=ChIJu4Al3TL5oI8RAtAlY655p3k&utm_campaign=default&utm_medium=lm_share_location&utm_source=waze_website"
+              svg="waze"
             />
           </div>
         </div>

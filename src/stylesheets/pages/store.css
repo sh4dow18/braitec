@@ -37,9 +37,24 @@ section div > p {
   border-bottom: 1px solid var(--black);
 }
 
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* Third Grade */
+
+section div .links-container {
+  /* Display */
+  width: 43rem;
+  /* Spacers */
+  padding-top: 0.7rem;
+  margin: 1rem auto;
+  /* Colors */
+  border-top: 1px solid var(--black);
+}
+
 /* Fourth Grade */
 
-section div div img {
+section div .schedule-container img {
   /* Display */
   border-radius: 1rem;
   /* Spacers */
