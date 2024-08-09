@@ -12,7 +12,11 @@
 
 .table-container div {
   /* Display */
-  overflow-x: scroll;
+  overflow-x: auto;
+}
+.table-container.no-scroll div {
+  /* Display */
+  overflow-x: unset;
 }
 .table-container > p {
   display: none;
@@ -24,7 +28,7 @@
   /* Display */
   border-collapse: collapse;
   /* Spacers */
-  margin: 1rem auto 2rem;
+  margin-inline: auto;
 }
 
 /* Fourth Grade */
@@ -38,6 +42,9 @@
 .table-container div table tr {
   /* Colors */
   border-bottom: 1px solid var(--black);
+}
+.table-container div .small-data :is(th, td) {
+  padding: 0.5rem;
 }
 
 /* Fifth Grade */
@@ -62,6 +69,11 @@
 .table-container div table tbody .symbol.green {
   /* Colors */
   color: #00cc00;
+}
+.table-container div .regular-child tbody tr:last-child {
+  /* Texts */
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 /* Sixth Grade */
@@ -92,7 +104,10 @@
   /* Second Grade */
 
   .table-container > p {
-    display: block
+    display: block;
+  }
+  .table-container.no-scroll > p {
+    display: none;
   }
 }
 

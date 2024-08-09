@@ -1,0 +1,98 @@
+/* Main Tags Styles */
+/* Sorted Alphabetically */
+
+/* Second Grade */
+
+section > div {
+  width: 45rem;
+  /* Spacers */
+  margin: 0.5rem auto;
+  /* Texts */
+  text-align: center;
+}
+section h2 {
+  /* Spacers */
+  margin: 2rem 7% 1rem;
+  /* Texts */
+  text-align: center;
+}
+
+/* Third Grade */
+
+section div div {
+  /* Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section div > p {
+  /* Spacers */
+  margin: 0 auto 1rem;
+  padding-bottom: 1rem;
+  /* Texts */
+  text-align: center;
+  /* Colors */
+  border-bottom: 1px solid var(--black);
+}
+
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* Third Grade */
+
+section div .links-container {
+  /* Spacers */
+  padding-top: 0.7rem;
+  margin: 1rem auto;
+  /* Colors */
+  border-top: 1px solid var(--black);
+}
+
+/* Fourth Grade */
+
+section div .schedule-container img {
+  /* Display */
+  border-radius: 1rem;
+  /* Spacers */
+  margin-inline: 1rem;
+  /* Colors */
+  border: 1px solid var(--black);
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 835px) {
+  /* Main Tags Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  section > div {
+    /* Display */
+    width: auto;
+    /* Spacers */
+    margin-inline: 7%;
+  }
+
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Fourth Grade */
+
+  section div .schedule-container img {
+    /* Display */
+    width: 100%;
+    height: 50%;
+  }
+  section
+    div
+    .schedule-container
+    :is(.table-container, .table-container div, .table-container table) {
+    /* Display */
+    width: 98%;
+    /* Spacers */
+    margin-inline: 0;
+  }
+}
