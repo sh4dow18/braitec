@@ -14,6 +14,10 @@
   /* Display */
   overflow-x: auto;
 }
+.table-container.no-scroll div {
+  /* Display */
+  overflow-x: unset;
+}
 .table-container > p {
   display: none;
 }
@@ -101,6 +105,9 @@
 
   .table-container > p {
     display: block;
+  }
+  .table-container.no-scroll > p {
+    display: none;
   }
 }
 

@@ -3,9 +3,10 @@
 
 /* Second Grade */
 
-section div {
+section > div {
+  width: 45rem;
   /* Spacers */
-  margin-bottom: 0.5rem;
+  margin: 0.5rem auto;
   /* Texts */
   text-align: center;
 }
@@ -26,8 +27,6 @@ section div div {
   align-items: center;
 }
 section div > p {
-  /* Display */
-  width: 43rem;
   /* Spacers */
   margin: 0 auto 1rem;
   padding-bottom: 1rem;
@@ -43,8 +42,6 @@ section div > p {
 /* Third Grade */
 
 section div .links-container {
-  /* Display */
-  width: 43rem;
   /* Spacers */
   padding-top: 0.7rem;
   margin: 1rem auto;
@@ -61,4 +58,41 @@ section div .schedule-container img {
   margin-inline: 1rem;
   /* Colors */
   border: 1px solid var(--black);
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 835px) {
+  /* Main Tags Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  section > div {
+    /* Display */
+    width: auto;
+    /* Spacers */
+    margin-inline: 7%;
+  }
+
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Fourth Grade */
+
+  section div .schedule-container img {
+    /* Display */
+    width: 100%;
+    height: 50%;
+  }
+  section
+    div
+    .schedule-container
+    :is(.table-container, .table-container div, .table-container table) {
+    /* Display */
+    width: 98%;
+    /* Spacers */
+    margin-inline: 0;
+  }
 }

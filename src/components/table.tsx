@@ -17,16 +17,27 @@ type Props = {
   rowsList: TableRow;
   regularLastChild?: boolean;
   smallData?: boolean;
+  noScroll?: boolean;
 };
 // Table Get Symbol function that gets a boolean and return a symbol
 const GetSymbol = (element: boolean) => {
   return element ? "✓" : "✗";
 };
 // Table Main Function
-function Table({ headersList, rowsList, regularLastChild, smallData }: Props) {
+function Table({
+  headersList,
+  rowsList,
+  regularLastChild,
+  smallData,
+  noScroll,
+}: Props) {
   // Returns Table Component
   return (
-    <div className="table-container">
+    <div
+      className={`table-container ${
+        noScroll === true ? "no-scroll" : ""
+      }`.trimEnd()}
+    >
       <p>Deslice a los Lados para ver Todos los Paquetes</p>
       <div>
         {/* Can use Small Data Prop to Reduce Padding in Table Cells */}

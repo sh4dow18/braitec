@@ -73,6 +73,7 @@ function Store() {
               ]}
               regularLastChild
               smallData
+              noScroll
             />
           </div>
           {/* Links Container */}
