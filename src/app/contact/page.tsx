@@ -29,9 +29,11 @@ function Contact() {
               type="text"
               name="name"
               placeholder="Ramsés Solano"
+              autoComplete="name"
+              required
             />
             <small>
-              El Nombre debe tener al Menos 2 Palabras, el Nombre y el Apellido
+              El nombre debe tener al menos 2 palabras, el nombre y el apellido
             </small>
           </section>
           <section>
@@ -41,8 +43,10 @@ function Contact() {
               type="email"
               name="email"
               placeholder="ramses.solano@braitec.cr"
+              autoComplete="email"
+              required
             />
-            <small>Debe ser un Correo Electrónico Válido</small>
+            <small>Debe ser un correo electrónico válido</small>
           </section>
           <section>
             <label htmlFor="message">Mensaje</label>
@@ -50,8 +54,13 @@ function Contact() {
               id="message"
               name="message"
               placeholder="Quisiera saber sobre..."
+              rows={6}
+              maxLength={255}
+              autoComplete="on"
+              autoCorrect="on"
+              required
             />
-            <small>El Mensaje debe Poseer Máximo 255 Caracteres</small>
+            <small>El mensaje debe poseer máximo 255 caracteres</small>
           </section>
           <input type="submit" value="Enviar Mensaje" />
         </form>
