@@ -63,6 +63,10 @@ section h2 {
   /* Spacers */
   margin-block: 0.2rem;
 }
+.contact-form-container section input {
+  /* Display */
+  border-width: 1px;
+}
 .contact-form-container section :is(input, textarea) {
   /* Spacers */
   padding: 1rem;
@@ -73,6 +77,16 @@ section h2 {
 .contact-form-container section :is(input, textarea):focus-visible {
   /* Colors */
   outline: 1px solid var(--blue);
+}
+.contact-form-container section :is(input, textarea)[aria-invalid="false"] {
+  /* Colors */
+  outline: 1px solid #00bb00;
+  border: 1px solid #00bb00;
+}
+.contact-form-container section :is(input, textarea)[aria-invalid="true"] {
+  /* Colors */
+  outline: 1px solid #bb0000;
+  border: 1px solid #bb0000;
 }
 .contact-form-container section label {
   /* Texts */
