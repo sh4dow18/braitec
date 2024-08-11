@@ -2,7 +2,12 @@
 import "@/stylesheets/pages/contact.css";
 // Contact Page Requirements
 import { Metadata } from "next";
-import { InputSection, TextareaSection, TitleSection } from "@/components";
+import {
+  Form,
+  InputSection,
+  TextareaSection,
+  TitleSection,
+} from "@/components";
 // Contact Page Metadata
 export const metadata: Metadata = {
   title: "Contacto",
@@ -21,7 +26,8 @@ function Contact() {
       />
       <section>
         <h2>Formulario de Contacto</h2>
-        <form className="contact-form-container">
+        {/* Contact form that button says "Send message" */}
+        <Form button="Enviar Mensaje">
           {/* Name Input Section */}
           <InputSection
             label="Nombre"
@@ -49,9 +55,7 @@ function Contact() {
             example="Quisiera Saber Sobre..."
             maxLength={255}
           />
-          {/* Sent Message Button */}
-          <input type="submit" value="Enviar Mensaje" />
-        </form>
+        </Form>
       </section>
     </>
   );
