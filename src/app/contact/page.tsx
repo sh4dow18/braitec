@@ -27,7 +27,7 @@ function Contact() {
       <section>
         <h2>Formulario de Contacto</h2>
         {/* Contact form that button says "Send message" */}
-        <Form button="Enviar Mensaje">
+        <Form api="emails" method="POST" button="Enviar Mensaje">
           {/* Name Input Section */}
           <InputSection
             label="Nombre"

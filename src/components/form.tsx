@@ -3,18 +3,37 @@
 // Form Stylesheets
 import "@/stylesheets/components/form.css";
 // Form Requirements
-import { useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 // Form Props
 type Props = {
+  api: string;
+  method: "GET" | "POST" | "PUT";
   button: string;
   children: React.ReactNode;
 };
 // Form Main Function
-function Form({ button, children }: Props) {
+function Form({ api, method, button, children }: Props) {
   // Button Disabled State that always starts with true
   const [disabled, SetDisabled] = useState<boolean>(true);
   // Form Reference
   const REFERENCE = useRef<HTMLFormElement | null>(null);
+  // Form Submit Function
+  const Submit = async (event: FormEvent<HTMLFormElement>) => {
+    // Avoid refreshing the page
+    event.preventDefault();
+    // Create a Form Data with actual form
+    const FORM = new FormData(event.currentTarget);
+    // Get the data form every input in form
+    const DATA = Object.fromEntries(FORM.entries());
+    // Make a request to project api to make something
+    fetch(`/api/${api}`, {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(DATA),
+    });
+  };
   // Form Main Use Effect Hook
   useEffect(() => {
     // Update Disable Attribute in Submit Button
@@ -61,7 +80,7 @@ function Form({ button, children }: Props) {
   }, []);
   // Return Form Component
   return (
-    <form className="form-container" ref={REFERENCE}>
+    <form className="form-container" ref={REFERENCE} onSubmit={Submit}>
       {/* Inputs and Textarea Components */}
       {children}
       {/* Sent Message Button */}
