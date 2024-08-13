@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Braitec in Contact -->
+    <title>Braitec en Contacto</title>
+  </head>
+  <!-- Inline styles, because the email manager understands it better -->
+  <body style="margin: 0; padding: 0;">
+    <header style="
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 10%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0a0a0a;
+      color: #fafafa;
+    ">
+      <p style="
+        margin: 0;
+        font-size: 1.35rem;
+        font-weight: bold;
+      ">BRAITEC</p>
+    </header>
+    <main style="padding-inline: 1rem;">
+      <h1 style="
+        margin-block: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        font-variant: small-caps;
+      ">Braitec en Contacto</h1>
+      <!-- Here is a New Message sent through the Contact Form on the official Braitec website -->
+      <p style="margin-bottom: 1rem;">
+        Aquí se presenta un Nuevo Mensaje enviado por medio del Formulario de
+        Contacto de la página oficial de Braitec
+      </p>
+      <table style="
+        margin-inline: auto;
+        border-collapse: collapse;
+      ">
+        <tbody>
+          <!-- Name Cells -->
+          <tr style="border-bottom: 1px solid #0a0a0a;">
+            <th style="padding: 1rem; text-align: left;">Nombre</th>
+            <td style="padding: 1rem;">{{name}}</td>
+          </tr>
+          <!-- E-Mail Cells -->
+          <tr style="border-bottom: 1px solid #0a0a0a;">
+            <th style="padding: 1rem; text-align: left;">Correo Electrónico</th>
+            <td style="padding: 1rem;">{{email}}</td>
+          </tr>
+          <!-- Message Cells -->
+          <tr style="border-bottom: 1px solid #0a0a0a;">
+            <th style="padding: 1rem; text-align: left;">Mensaje</th>
+            <td style="padding: 1rem;">{{message}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
