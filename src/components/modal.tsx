@@ -6,7 +6,6 @@ import "@/stylesheets/components/modal.css";
 import Image from "next/image";
 // Modal Props
 type Props = {
-  open: boolean;
   status: "success" | "error" | "loading";
   children: string;
   Close: () => void;
@@ -24,10 +23,10 @@ const STATUS_TITLES: Record<string, string> = {
   loading: "Cargando...",
 };
 // Modal Main Function
-function Modal({ open, status, Close, children }: Props) {
+function Modal({ status, Close, children }: Props) {
   // Returns Modal Component
   return (
-    <dialog className={`modal-container ${status}`} open={open}>
+    <dialog className={`modal-container ${status}`} open>
       {/* Modal Main Image */}
       <Image
         src={`/misc/${status}.gif`}

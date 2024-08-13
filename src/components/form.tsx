@@ -4,17 +4,38 @@
 import "@/stylesheets/components/form.css";
 // Form Requirements
 import { FormEvent, useEffect, useRef, useState } from "react";
+import Modal from "./modal";
+// Modal Settings Type
+type ModalSettings = {
+  open: boolean;
+  status: "success" | "error" | "loading";
+  message: string;
+};
 // Form Props
 type Props = {
   api: string;
   method: "GET" | "POST" | "PUT";
   button: string;
+  modal: {
+    success: string;
+    error: string;
+    loading: string;
+  };
   children: React.ReactNode;
 };
 // Form Main Function
-function Form({ api, method, button, children }: Props) {
+function Form({ api, method, button, modal, children }: Props) {
+  // Init and Default Modal Settings
+  const INIT_MODAL_SETTINGS: ModalSettings = {
+    open: false,
+    status: "loading",
+    message: modal.loading,
+  };
   // Button Disabled State that always starts with true
   const [disabled, SetDisabled] = useState<boolean>(true);
+  // Modal Init Settings
+  const [modalSettings, SetModalSettings] =
+    useState<ModalSettings>(INIT_MODAL_SETTINGS);
   // Form Reference
   const REFERENCE = useRef<HTMLFormElement | null>(null);
   // Form Submit Function
@@ -25,13 +46,24 @@ function Form({ api, method, button, children }: Props) {
     const FORM = new FormData(event.currentTarget);
     // Get the data form every input in form
     const DATA = Object.fromEntries(FORM.entries());
+    // Open Modal
+    SetModalSettings({
+      ...modalSettings,
+      open: true,
+    });
     // Make a request to project api to make something
-    fetch(`/api/${api}`, {
+    const RESPONSE = await fetch(`/api/${api}`, {
       method: method,
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(DATA),
+    });
+    // Change the modal info to success info if response is ok, otherwise set error info
+    SetModalSettings({
+      open: true,
+      status: RESPONSE.ok ? "success" : "error",
+      message: RESPONSE.ok ? modal.success : modal.error,
     });
   };
   // Form Main Use Effect Hook
@@ -80,14 +112,26 @@ function Form({ api, method, button, children }: Props) {
   }, []);
   // Return Form Component
   return (
-    <form className="form-container" ref={REFERENCE} onSubmit={Submit}>
-      {/* Inputs and Textarea Components */}
-      {children}
-      {/* Sent Message Button */}
-      <button type="submit" disabled={disabled}>
-        {button}
-      </button>
-    </form>
+    <>
+      {/* Main Form */}
+      <form className="form-container" ref={REFERENCE} onSubmit={Submit}>
+        {/* Inputs and Textarea Components */}
+        {children}
+        {/* Sent Message Button */}
+        <button type="submit" disabled={disabled}>
+          {button}
+        </button>
+      </form>
+      {/* If the modal settings has the value open to true, display modal, if not, hide it */}
+      {modalSettings.open && (
+        <Modal
+          status={modalSettings.status}
+          Close={() => SetModalSettings(INIT_MODAL_SETTINGS)}
+        >
+          {modalSettings.message}
+        </Modal>
+      )}
+    </>
   );
 }
 

@@ -27,7 +27,19 @@ function Contact() {
       <section>
         <h2>Formulario de Contacto</h2>
         {/* Contact form that button says "Send message" */}
-        <Form api="emails" method="POST" button="Enviar Mensaje">
+        {/* Success: Message Sent Successfully */}
+        {/* Error: There was an error sending the message, try again */}
+        {/* Loading: Your Message is Being Sent, wait a minute... */}
+        <Form
+          api="emails"
+          method="POST"
+          button="Enviar Mensaje"
+          modal={{
+            success: "Mensaje Enviado Satisfactoriamente",
+            error: "Hubo un Error al Enviar el Mensaje, intente nuevamente",
+            loading: "Se está Enviando su Mensaje, un momento...",
+          }}
+        >
           {/* Name Input Section */}
           <InputSection
             label="Nombre"
