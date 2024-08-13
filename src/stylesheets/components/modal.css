@@ -102,3 +102,16 @@ body:has(.modal-container[open])::before {
   background-color: #3ba55d;
 }
 
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 400px) {
+  /* Main Tags Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .modal-container {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
