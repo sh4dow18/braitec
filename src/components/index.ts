@@ -1,6 +1,7 @@
 // General Components Barrel
 export { default as CardsListSection } from "./cards-list-section";
 export { default as Form } from "./form";
+export { default as ImageLink } from "./image-link";
 export { default as ImageSection } from "./image-section";
 export { default as ImagesListSection } from "./images-list-section";
 export { default as InputSection } from "./input-section";
