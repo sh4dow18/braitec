@@ -1,26 +1,35 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
 .title-section-container {
   /* Spacers */
-  padding: 2%;
+  padding-block: 2%;
   /* Texts */
   font-weight: bold;
   text-align: center;
   /* Colors */
-  background-color: var(--blue);
+  background: linear-gradient(var(--blue), var(--black));
   border-bottom: 3px solid var(--black);
   color: var(--white);
+}
+.title-section-container.main {
+  /* Spacers */
+  padding-block: 5%;
 }
 
 /* Second Grade */
 
 .title-section-container h1 {
   /* Texts */
-  /* font-size: 500%; */
   font-size: 4rem;
+  /* Colors */
   text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
     -2px 2px 0 var(--black), 2px 2px 0 var(--black);
 }
 .title-section-container hr {
-  /* right: 3px; */
+  /* Display */
   width: 30rem;
   /* Spacers */
   margin: 0.3rem auto 1.8rem;
@@ -32,14 +41,90 @@
 .title-section-container p {
   /* Texts */
   font-size: 1.2rem;
+  /* Colors */
   text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
     -2px 2px 0 var(--black), 2px 2px 0 var(--black);
+}
+.title-section-container.main h1 {
+  /* Spacers */
+  margin-bottom: 1rem;
+  /* Texts */
+  font-size: 6rem;
+}
+.title-section-container.main hr {
+  /* Display */
+  max-height: 0.5rem;
+  overflow: visible;
+  position: relative;
+  /* Spacers */
+  margin: 1rem auto 1.8rem;
+  padding: 0;
+}
+.title-section-container.main hr::after {
+  /* Display */
+  content: url("../../../public/misc/star.png");
+  position: relative;
+  top: -1.1rem;
+  /* Spacers */
+  padding-left: 10px;
+  padding-right: 13px;
+  /* Texts */
+  font-size: 2.5rem;
+  /* Colors */
+  background-color: linear-gradient(var(--blue), var(--black));
+  text-shadow: -1.5px -1.3px 0 var(--black), 1.5px -1.3px 0 var(--black),
+    -1.5px 1.3px 0 var(--black), 1.5px 1.3px 0 var(--black);
+}
+.title-section-container.main p {
+  /* Texts */
+  font-size: 1.5rem;
 }
 
 /* Media Queries */
 /* Sorted by Max Width */
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 1015px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .title-section-container.main h1 {
+    /* Texts */
+    font-size: 4rem;
+  }
+  .title-section-container.main p {
+    /* Texts */
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .title-section-container p {
+    /* Spacers */
+    margin-inline: 1rem;
+    /* Texts */
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .title-section-container.main p {
+    /* Spacers */
+    margin-inline: 1rem;
+    /* Texts */
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
@@ -49,18 +134,23 @@
     /* Texts */
     font-size: 3rem;
   }
-  .title-section-container hr {
+  .title-section-container hr,
+  .title-section-container.main hr {
     /* Display */
-    width: 22rem;
+    width: auto;
+  }
+  .title-section-container hr {
     /* Spacers */
-    margin-bottom: 1rem;
+    margin: 0.5rem 1rem 1rem;
   }
   .title-section-container p {
     /* Texts */
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .title-section-container.main hr {
+    margin-inline: 1rem;
   }
 }
-
 @media screen and (max-width: 380px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
@@ -69,16 +159,6 @@
 
   .title-section-container h1 {
     /* Texts */
-    font-size: 2rem;
-  }
-  .title-section-container hr {
-    /* Display */
-    width: 15rem;
-    /* Spacers */
-    margin-bottom: 0.7rem;
-  }
-  .title-section-container p {
-    /* Texts */
-    font-size: 0.8rem;
+    font-size: 2.5rem;
   }
 }
