@@ -104,6 +104,10 @@
 
   /* Second Grade */
 
+  .title-section-container hr {
+    margin-bottom: 1rem;
+  }
+
   .title-section-container p {
     /* Spacers */
     margin-inline: 1rem;
@@ -131,6 +135,8 @@
   /* Second Grade */
 
   .title-section-container h1 {
+    /* Spacers */
+    margin-block: 1rem;
     /* Texts */
     font-size: 3rem;
   }
@@ -139,13 +145,13 @@
     /* Display */
     width: auto;
   }
-  .title-section-container hr {
-    /* Spacers */
-    margin: 0.5rem 1rem 1rem;
+  .title-section-container:not(:is(.main)) hr {
+    /* Display */
+    display: none;
   }
   .title-section-container p {
-    /* Texts */
-    font-size: 0.9rem;
+    /* Display */
+    display: none;
   }
   .title-section-container.main hr {
     margin-inline: 1rem;
