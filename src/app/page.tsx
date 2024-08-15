@@ -50,9 +50,11 @@ export default function Home() {
       {/* Competitive Advantages Section */}
       <ImagesListSection title="¿Qué Nos Diferencia?">
         {/* Competitive Prices Image Section */}
-        <ImageSection title="Precios Competitivos" image="competitive-prices" />
-        {/* Offers & Combos Image Section */}
-        <ImageSection title="Ofertas y Combos" image="offers-and-combos" />
+        <ImageSection title="Precios Bajos" image="lower-prices" />
+        {/* Offers Image Section */}
+        <ImageSection title="Ofertas" image="offers" />
+        {/* Combos Image Section */}
+        <ImageSection title="Combos" image="combos" />
         {/* Fidelazation Program Image Section */}
         <ImageSection
           title="Programa de Fidelización"
@@ -66,7 +68,9 @@ export default function Home() {
         {/* Maximum Savings Image Section */}
         <ImageSection title="Máximo Ahorro" image="maximum-savings" />
         {/* Reliability Image Section */}
-        <ImageSection title="Gran Fiabilidad" image="reliability" />
+        <ImageSection title="Alta Fiabilidad" image="reliability" />
+        {/* Experience Image Section */}
+        <ImageSection title="Gran Experiencia" image="experience" />
       </ImagesListSection>
       {/* Brand Features Section */}
       <ImagesListSection title="¿Qué Nos Caracteriza?">
