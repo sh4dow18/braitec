@@ -58,7 +58,7 @@
 
   .images-list-section-container {
     /* Spacers */
-    margin-inline: 5%;
+    margin-inline: 3rem;
   }
 
   /* Second Grade */
@@ -66,5 +66,15 @@
   .images-list-section-container h2 {
     /* Display */
     width: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+  
+  .images-list-section-container {
+    margin-inline: 1.5rem;
   }
 }

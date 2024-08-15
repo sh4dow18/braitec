@@ -11,3 +11,30 @@
   /* Spacers */
   margin-inline: 2rem;
 }
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 991px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .main-information-container :nth-child(1) {
+    /* Spacers */
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .main-information-container {
+    /* Spacers */
+    margin-inline: 0.5rem;
+  }
+}
