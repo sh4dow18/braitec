@@ -2,8 +2,9 @@
 import "@/stylesheets/globals.css";
 // Main Layout Requirements
 import Link from "next/link";
-import { FooterImage, FooterSection } from "@/components/layout/footer";
+import { FooterSection } from "@/components/layout/footer";
 import { BurgerMenu } from "@/components/layout/header";
+import { ImageLink } from "@/components";
 // Main Layout Function
 export default function RootLayout({
   children,
@@ -37,45 +38,76 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer>
-          {/* Main Logo in Footer */}
-          {LOGO}
-          {/* Location Footer Section */}
-          <FooterSection title="Ubicación" isfor="links">
-            {/* Google Maps Icon with Link */}
-            <FooterImage
-              link="https://maps.app.goo.gl/Uh3aYiwm8Y6PHUsj7"
-              icon="google-maps"
-            />
-            {/* Uber Icon with Link */}
-            <FooterImage
-              link="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=9.9799299&dropoff[longitude]=-84.2412363&dropoff[nickname]=Braitec:%20Soluciones%20Tecnológicas"
-              icon="uber"
-            />
-            {/* Waze Icon with Link */}
-            <FooterImage
-              link="https://www.waze.com/en/live-map/directions/cr/alajuela-province/alajuela/braitec-soluciones-tecnologicas?navigate=yes&place=ChIJu4Al3TL5oI8RAtAlY655p3k&utm_campaign=default&utm_medium=lm_share_location&utm_source=waze_website"
-              icon="waze"
-            />
-          </FooterSection>
-          {/* Social Media Footer Section */}
-          <FooterSection title="Redes Sociales" isfor="links">
-            {/* Whatsapp Icon with Link */}
-            <FooterImage link="https://wa.me/50689414905" icon="whatsapp" />
-            {/* Facebook Icon with Link */}
-            <FooterImage
-              link="https://www.facebook.com/BraitecCR/"
-              icon="facebook"
-            />
-            {/* Github Icon with Link */}
-            <FooterImage link="https://github.com/sh4dow18" icon="github" />
-          </FooterSection>
-          {/* Phone Number Footer Section */}
-          <FooterSection title="Teléfono" isfor="links">
-            {/* Phone Number Icon and Link */}
-            <FooterImage link="tel:+50689414905" icon="phone" />
-          </FooterSection>
-          {/* Credits Footer Section */}
-          <FooterSection title="Créditos" isfor="credits">
+          <div>
+            {/* Main Logo in Footer */}
+            {LOGO}
+            {/* Location Footer Section */}
+            <FooterSection title="Ubicación">
+              {/* Google Maps Image Link */}
+              <ImageLink
+                name="Maps"
+                svg="google-maps"
+                url="https://maps.app.goo.gl/Uh3aYiwm8Y6PHUsj7"
+                invertColors
+              />
+              {/* Uber Image Link */}
+              <ImageLink
+                name="Uber"
+                svg="uber"
+                url="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=9.9799299&dropoff[longitude]=-84.2412363&dropoff[nickname]=Braitec:%20Soluciones%20Tecnológicas"
+                invertColors
+              />
+              {/* Waze Image Link */}
+              <ImageLink
+                name="Waze"
+                svg="waze"
+                url="https://www.waze.com/en/live-map/directions/cr/alajuela-province/alajuela/braitec-soluciones-tecnologicas?navigate=yes&place=ChIJu4Al3TL5oI8RAtAlY655p3k&utm_campaign=default&utm_medium=lm_share_location&utm_source=waze_website"
+                invertColors
+              />
+            </FooterSection>
+            {/* Social Media Footer Section */}
+            <FooterSection title="Redes Sociales">
+              {/* Whatsapp Image Link */}
+              <ImageLink
+                name="Whatsapp"
+                svg="whatsapp"
+                url="https://wa.me/50689414905"
+                invertColors
+              />
+              {/* Facebook Image Link */}
+              <ImageLink
+                name="Facebook"
+                svg="facebook"
+                url="https://www.facebook.com/BraitecCR/"
+                invertColors
+              />
+              {/* Github Image Link */}
+              <ImageLink
+                name="Github"
+                svg="github"
+                url="https://github.com/sh4dow18"
+                invertColors
+              />
+            </FooterSection>
+            {/* Phone Number Footer Section */}
+            <FooterSection title="Contacto Directo">
+              {/* Phone Image Link */}
+              <ImageLink
+                name="Teléfono"
+                svg="phone"
+                url="tel:+50689414905"
+                invertColors
+              />
+              {/* E-Mail Image Link */}
+              <ImageLink
+                name="E-Mail"
+                svg="email"
+                url="mailto:braiteccr@gmail.com"
+                invertColors
+              />
+            </FooterSection>
+          </div>
+          <div>
             {/* Creator's Signature */}
             <p>
               Página hecha por{" "}
@@ -93,7 +125,7 @@ export default function RootLayout({
               {/* Last Update */}
               30 de Julio del 2024
             </p>
-          </FooterSection>
+          </div>
         </footer>
       </body>
     </html>
