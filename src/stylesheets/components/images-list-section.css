@@ -1,8 +1,20 @@
+/* Main Classes Styles */
+/* Sorted Alphabetically */
+
+/* First Grade */
+
 .images-list-section-container {
   /* Spacers */
-  margin: 1rem 5%;
+  margin-bottom: 1rem;
 }
+
+/* Second Grade */
+
 .images-list-section-container h2 {
+  /* Display */
+  width: 84rem;
+  /* Spacers */
+  margin-inline: auto;
   /* Texts */
   text-align: center;
 }
@@ -11,4 +23,48 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 1471px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .images-list-section-container h2 {
+    /* Display */
+    width: 65rem;
+  }
+}
+@media screen and (max-width: 1151px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .images-list-section-container h2 {
+    /* Display */
+    width: 55rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .images-list-section-container {
+    /* Spacers */
+    margin-inline: 5%;
+  }
+
+  /* Second Grade */
+
+  .images-list-section-container h2 {
+    /* Display */
+    width: auto;
+  }
 }
