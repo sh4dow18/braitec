@@ -24,7 +24,6 @@
   /* Texts */
   font-size: 1.1rem;
   line-height: 1.5;
-  text-wrap: pretty;
 }
 
 /* Media Queries */
@@ -69,5 +68,11 @@
   .text-section-container.right {
     /* Texts */
     text-align: left;
+  }
+
+  /* Second Grade */
+
+  .text-section-container h2 {
+    text-align: center;
   }
 }
