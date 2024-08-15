@@ -27,7 +27,7 @@ function BurgerMenu({ pages }: Props) {
     >
       {/* Burger Menu Icon */}
       <Image
-        src="/burger-menu.svg"
+        src="/svgs/burger-menu.svg"
         alt="Icono de Menú Hamburguesa"
         width={35}
         height={35}

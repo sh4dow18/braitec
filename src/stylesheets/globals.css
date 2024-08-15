@@ -75,6 +75,10 @@ footer > p {
   font-size: 2rem;
   font-weight: bold;
 }
+nav a:hover {
+  /* Display */
+  transform: translateY(-1px) scale(1.1);
+}
 
 /* Third Grade */
 
