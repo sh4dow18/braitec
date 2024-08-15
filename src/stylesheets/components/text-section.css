@@ -66,4 +66,8 @@
     /* Spacers */
     margin: 1rem;
   }
+  .text-section-container.right {
+    /* Texts */
+    text-align: left;
+  }
 }
