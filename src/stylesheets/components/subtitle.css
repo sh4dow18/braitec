@@ -1,9 +1,9 @@
-/* Main Tags Styles */
+/* Main Classes Styles */
 /* Sorted Alphabetically */
 
 /* Second Grade */
 
-section h2 {
+.subtitle-container h2 {
   /* Spacers */
   margin: 2rem 7% 1rem;
   /* Texts */

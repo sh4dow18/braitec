@@ -1,7 +1,7 @@
 import "@/stylesheets/pages/about-us.css";
 // About Us Page Requirements
 import { Metadata } from "next";
-import { ImageLink, TitleSection } from "@/components";
+import { ImageLink, Subtitle, TitleSection } from "@/components";
 import Image from "next/image";
 // About Us Page Metadata
 export const metadata: Metadata = {
@@ -19,11 +19,9 @@ function AboutUs() {
         subtitle="Aquí se Muestra la Información del Personal del Negocio"
       />
       {/* Founder Container Section */}
-      <section className="founder-container">
-        {/* Founder Title */}
-        <h2>Fundador</h2>
+      <Subtitle name="Fundador">
         {/* Founder Content */}
-        <div>
+        <div className="founder-container">
           {/* Founder Card */}
           <div>
             {/* Founder Profile Image */}
@@ -89,7 +87,7 @@ function AboutUs() {
             </p>
           </section>
         </div>
-      </section>
+      </Subtitle>
     </>
   );
 }

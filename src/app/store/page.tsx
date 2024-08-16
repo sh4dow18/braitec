@@ -2,7 +2,7 @@
 import "@/stylesheets/pages/store.css";
 // Store Page Requirements
 import { Metadata } from "next";
-import { ImageLink, Table, TitleSection } from "@/components";
+import { ImageLink, Subtitle, Table, TitleSection } from "@/components";
 import Image from "next/image";
 // Store Page Metadata
 export const metadata: Metadata = {
@@ -20,8 +20,7 @@ function Store() {
         subtitle="Aquí se Muestra toda la Información de Nuestra Ubicación"
       />
       {/* Location Section */}
-      <section>
-        <h2>Nuestra Ubicación</h2>
+      <Subtitle name="Nuestra Ubicación">
         <div>
           <p>
             Del Super Cali 50 Metros Norte y 50 Metros Este Penúltima Casa a
@@ -98,7 +97,7 @@ function Store() {
             />
           </div>
         </div>
-      </section>
+      </Subtitle>
     </>
   );
 }
