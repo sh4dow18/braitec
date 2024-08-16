@@ -3,7 +3,7 @@
 
 /* Second Grade */
 
-.founder-container > div {
+.founder-container {
   /* Display */
   display: flex;
   flex-wrap: wrap;
@@ -12,44 +12,38 @@
   /* Spacers */
   margin: 2rem auto;
 }
-.founder-container h2 {
-  /* Spacers */
-  margin: 1rem 7%;
-  /* Texts */
-  text-align: center;
-}
 
 /* Third Grade */
 
-.founder-container > div > * {
+.founder-container > * {
   /* Spacers */
   margin-inline: 1rem;
 }
-.founder-container > div > div {
+.founder-container > div {
   /* Display */
   border-radius: 1rem;
   height: 27.5rem;
   /* Colors */
   border: 1px solid var(--black);
 }
-.founder-container > div section {
+.founder-container > section {
   /* Display */
   width: 48rem;
 }
 
 /* Fourth Grade */
 
-.founder-container div div div a {
+.founder-container div div a {
   /* Display */
   border-radius: 0.5rem;
 }
-.founder-container div div div {
+.founder-container div div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.founder-container > div section h3 {
+.founder-container > section h3 {
   /* Spacers */
   padding-bottom: 0.2rem;
   /* Texts */
@@ -58,14 +52,14 @@
   /* Colors */
   border-bottom: 2px solid var(--black);
 }
-.founder-container div div > img {
+.founder-container div > img {
   /* Display */
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   /* Colors */
   border-bottom: 1px solid var(--black);
 }
-.founder-container > div section p {
+.founder-container > section p {
   /* Spacers */
   margin-block: 1rem;
   /* Texts */
@@ -74,7 +68,7 @@
 
 /* Fifth Grade */
 
-.founder-container div div div a img {
+.founder-container div div a img {
   /* Spacers */
   padding-right: 0.4rem;
 }
@@ -88,7 +82,7 @@
 
   /* Second Grade */
 
-  .founder-container > div {
+  .founder-container {
     /* Display */
     width: auto;
   }
@@ -99,7 +93,7 @@
 
   /* Third Grade */
 
-  .founder-container > div section {
+  .founder-container > section {
     /* Display */
     width: auto;
     /* Spacers */
@@ -110,11 +104,11 @@
 
   /* Fourth Grade */
 
-  .founder-container > div section h3 {
+  .founder-container > section h3 {
     /* Texts */
     text-align: center;
   }
-  .founder-container > div section p {
+  .founder-container > section p {
     /* Texts */
     line-height: 2
   }
@@ -125,14 +119,14 @@
 
   /* Third Grade */
 
-  .founder-container > div > div {
+  .founder-container > div {
     /* Display */
     height: 26rem;
   }
 
   /* Fourth Grade */
 
-  .founder-container div div > img {
+  .founder-container div > img {
     /* Display */
     width: 300px;
     height: 338px;

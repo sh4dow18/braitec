@@ -24,29 +24,6 @@ body {
   /* Text */
   font-family: Arial, Helvetica, sans-serif;
 }
-footer {
-  /* Display */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* Spacers */
-  padding: 1rem 10%;
-  /* Colors */
-  background-color: var(--black);
-  color: var(--white);
-}
-h2 {
-  /* Spacers */
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  /* Texts */
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
-  font-variant: small-caps;
-  /* Colors */
-  border-bottom: 2px solid var(--black);
-}
 main {
   /* Display */
   flex: 1;
@@ -68,12 +45,39 @@ body > header {
   background-color: var(--black);
   color: var(--white);
 }
-footer > p {
+footer > div:nth-child(1) {
   /* Display */
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Spacers */
+  padding: 1rem 10%;
+  /* Colors */
+  background-color: var(--black);
+  color: var(--white);
+}
+footer > div:nth-child(2) {
+  /* Spacers */
+  padding: 1rem;
+  /* Colors */
+  background-color: #222;
+  border-top: 1px solid var(--white);
+}
+main h2 {
+  /* Spacers */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
   /* Texts */
   font-size: 2rem;
   font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  /* Colors */
+  border-bottom: 2px solid var(--black);
+}
+nav a:hover {
+  /* Display */
+  transform: translateY(-1px) scale(1.1);
 }
 
 /* Third Grade */
@@ -84,6 +88,32 @@ body > header p {
   /* Texts */
   font-size: 1.35rem;
   font-weight: bold;
+}
+footer div:nth-child(1) > p {
+  /* Display */
+  align-content: center;
+  /* Spacers */
+  margin-inline: 0.5rem;
+  /* Texts */
+  font-size: 3rem;
+  font-weight: bold;
+}
+footer div:nth-child(2) p {
+  /* Spacers */
+  padding-block: 0.2rem;
+  /* Texts */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  /* Colors */
+  color: var(--white);
+}
+
+/* Fourth Grade */
+
+footer div:nth-child(2) p a {
+  /* Colors */
+  color: var(--white);
 }
 
 /* Main Clases Styles */
@@ -120,35 +150,6 @@ body > header p {
 /* Media Queries */
 /* Sorted by Max Width */
 
-@media screen and (max-width: 572px) {
-  /* Main Tag Styles */
-  /* Sorted Alphabetically */
-
-  /* Second Grade */
-
-  footer > p {
-    /* Display */
-    display: none;
-  }
-}
-@media screen and (max-width: 815px) {
-  /* Main Tag Styles */
-  /* Sorted Alphabetically */
-
-  /* First Grade */
-
-  footer {
-    /* Spacers */
-    padding-inline: 1rem;
-  }
-
-  /* Second Grade */
-
-  footer > p {
-    /* Spacers */
-    margin-right: 1rem;
-  }
-}
 @media screen and (max-width: 1235px) {
   /* Main Tag Styles */
   /* Sorted Alphabetically */
@@ -177,5 +178,82 @@ body > header p {
   .desktop-nav {
     /* Display */
     display: none;
+  }
+}
+@media screen and (max-width: 931px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer div:nth-child(1) > p {
+    /* Texts */
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 837px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer div:nth-child(1) > p {
+    /* Display */
+    display: none;
+  }
+}
+@media screen and (max-width: 626px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  footer div:nth-child(1) {
+    /* Spacers */
+    padding-inline: 1rem;
+  }
+}
+@media screen and (max-width: 572px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer > div:nth-child(2) p {
+    /* Texts */
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 464px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer > div:nth-child(2) p {
+    /* Texts */
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 409px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer > div:nth-child(2) p {
+    /* Texts */
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 356px) {
+  /* Main Tag Styles */
+  /* Sorted Alphabetically */
+
+  /* Third Grade */
+
+  footer > div:nth-child(2) p {
+    /* Texts */
+    font-size: 0.5rem;
   }
 }

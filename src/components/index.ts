@@ -8,6 +8,7 @@ export { default as InputSection } from "./input-section";
 export { default as Modal } from "./modal";
 export { default as Table } from "./table";
 export { default as RepairCardSection } from "./repair-card-section";
+export { default as Subtitle } from "./subtitle";
 export { default as TextSection } from "./text-section";
 export { default as TextareaSection } from "./textarea-section";
 export { default as TitleSection } from "./title-section";

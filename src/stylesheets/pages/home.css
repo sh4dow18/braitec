@@ -12,94 +12,29 @@
   margin-inline: 2rem;
 }
 
-.presentation-container {
-  /* Spacers */
-  padding: 5%;
-  /* Texts */
-  font-weight: bold;
-  text-align: center;
-  /* Colors */
-  background-color: var(--blue);
-  border-bottom: 3px solid var(--black);
-  color: var(--white);
-}
-
-/* Second Grade */
-
-.presentation-container h1 {
-  /* Spacers */
-  margin-bottom: 1rem;
-  /* Texts */
-  font-size: 6rem;
-  text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
-    -2px 2px 0 var(--black), 2px 2px 0 var(--black);
-}
-.presentation-container hr {
-  /* Display */
-  max-height: 0.5rem;
-  overflow: visible;
-  position: relative;
-  right: 3px;
-  width: 30rem;
-  /* Spacers */
-  margin: 1rem auto 1.8rem;
-  /* Colors */
-  background-color: var(--white);
-  box-shadow: 2px 2px 2px var(--black);
-}
-.presentation-container hr::after {
-  /* Display */
-  content: "\2605";
-  position: relative;
-  top: -1.2rem;
-  /* Spacers */
-  padding-left: 10px;
-  padding-right: 13px;
-  /* Texts */
-  font-size: 2.5rem;
-  text-shadow: -1.5px -1.3px 0 var(--black), 1.5px -1.3px 0 var(--black),
-    -1.5px 1.3px 0 var(--black), 1.5px 1.3px 0 var(--black);
-  /* Colors */
-  background-color: var(--blue);
-}
-.presentation-container p {
-  /* Texts */
-  font-size: 1.5rem;
-  text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
-    -2px 2px 0 var(--black), 2px 2px 0 var(--black);
-}
-
 /* Media Queries */
 /* Sorted by Max Width */
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 991px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
   /* Second Grade */
 
-  .presentation-container h1 {
-    /* Texts */
-    font-size: 2rem;
+  .main-information-container :nth-child(1) {
+    /* Spacers */
+    margin-bottom: 0;
   }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 500px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
-  /* Second Grade */
+  /* First Grade */
 
-  .presentation-container h1 {
-    /* Texts */
-    font-size: 4rem;
-  }
-  .presentation-container hr {
-    /* Display */
-    width: auto;
-  }
-  .presentation-container p {
-    /* Texts */
-    font-size: 1.2rem;
+  .main-information-container {
+    /* Spacers */
+    margin-inline: 0.5rem;
   }
 }

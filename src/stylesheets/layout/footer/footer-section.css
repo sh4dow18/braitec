@@ -3,116 +3,62 @@
 
 /* First Grade */
 
-.footer-links-section {
-  /* Spacers */
-  margin-left: 2rem;
-}
-.footer-credits-section {
+.footer-section {
   /* Spacers */
   margin-inline: 2rem;
+  /* Texts */
+  text-align: center;
 }
 
 /* Second Grade */
 
-:is(.footer-links-section, .footer-credits-section) > p {
+.footer-section h2 {
   /* Spacers */
+  padding-bottom: 0.3rem;
   margin-bottom: 0.8rem;
   /* Texts */
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.footer-links-section > p {
-  /* Texts */
-  text-align: center;
-}
-.footer-links-section section {
-  /* Display */
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Third Grade */
-
-.footer-links-section section img {
-  /* Spacers */
-  margin-inline: 0.3rem;
-}
-.footer-credits-section section p {
-  /* Spacers */
-  margin-bottom: 0.45rem;
-  /* Texts */
-  font-weight: bold;
-}
-
-/* Fourth Grade */
-
-.footer-credits-section section p a {
+  font-variant: small-caps;
   /* Colors */
-  color: var(--text-color);
+  border-bottom: 1px solid var(--white);
 }
 
-/* Media Queries */
-/* Sorted by Max Width */
-
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1116px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
   /* First Grade */
 
-  .footer-links-section {
+  .footer-section {
     /* Spacers */
-    margin-left: 0;
-  }
-
-  /* Second Grade */
-
-  .footer-links-section > p {
-    /* Display */
-    display: none;
+    margin-inline: 1%;
   }
 }
-
-@media screen and (max-width: 1575px) {
+@media screen and (max-width: 533px) {
   /* Main Classes Styles */
   /* Sorted Alphabetically */
 
   /* Second Grade */
 
-  .footer-credits-section > p {
+  .footer-section h2 {
     /* Display */
     display: none;
   }
-  .footer-credits-section section {
+}
+@media screen and (max-width: 485px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* Second Grade */
+
+  .footer-section p {
+    /* Display */
+    display: none;
+  }
+
+  /* Third Grade */
+
+  .footer-section .image-link-container img {
     /* Spacers */
-    margin-top: 1rem;
-    /* Texts */
-    text-align: center;
+    border-right: none;
   }
-}
-@media screen and (max-width: 641px) {
-  .footer-credits-section {
-    margin-inline: 0.5rem;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 484px) {
-  .footer-credits-section {
-    margin-inline: 0;
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 414px) {
-   .footer-credits-section {
-    margin-inline: 0.1rem;
-    font-size: 0.6rem;
-  }
-}
-@media screen and (max-width: 363px) {
-  .footer-credits-section {
-   margin-inline: 0.2rem;
-   font-size: 0.5rem;
- }
 }

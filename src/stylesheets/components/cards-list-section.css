@@ -14,7 +14,7 @@
   /* Texts */
   text-align: center;
 }
-.cards-list-section-container div {
+.cards-list-section-container > div {
   /* Display */
   display: flex;
   flex-wrap: wrap;

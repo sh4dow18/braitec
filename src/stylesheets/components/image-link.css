@@ -6,13 +6,13 @@
 .image-link-container {
   /* Display */
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   /* Spacers */
   margin: 0.5rem;
   /* Texts */
   text-decoration: none;
+  font-style: italic;
   /* Colors */
   border: 1px solid var(--black);
   color: var(--black);
@@ -22,12 +22,22 @@
   color: var(--white);
   background-color: var(--black);
 }
+.image-link-container.invert-colors {
+  /* Colors */
+  border-color: var(--white);
+}
+.image-link-container.invert-colors:hover {
+  /* Colors */
+  filter: invert(100%)
+}
 
 /* Second Grade */
 
 .image-link-container img {
+  /* Spacers */
+  padding: 0.5rem;
+  /* Colors */
   border-right: 1px solid var(--black);
-  padding: 0.5rem 0.3rem 0.5rem 0.5rem;
 }
 .image-link-container:hover img {
   /* Colors */
@@ -35,5 +45,9 @@
 }
 .image-link-container p {
   /* Spacers */
-  padding: 0.5rem 0.8rem 0.4rem 0.5rem;
+  padding: 0.5rem;
+}
+.image-link-container.invert-colors img {
+  /* Colors */
+  filter: invert(100%);
 }

@@ -3,30 +3,25 @@
 
 /* Second Grade */
 
-section > div {
+.location-container {
+  /* Display */
   width: 45rem;
   /* Spacers */
   margin: 0.5rem auto;
   /* Texts */
   text-align: center;
 }
-section h2 {
-  /* Spacers */
-  margin: 2rem 7% 1rem;
-  /* Texts */
-  text-align: center;
-}
 
 /* Third Grade */
 
-section div div {
+.location-container div {
   /* Display */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-section div > p {
+.location-container > p {
   /* Spacers */
   margin: 0 auto 1rem;
   padding-bottom: 1rem;
@@ -41,7 +36,7 @@ section div > p {
 
 /* Third Grade */
 
-section div .links-container {
+.location-container .links-container {
   /* Spacers */
   padding-top: 0.7rem;
   margin: 1rem auto;
@@ -51,7 +46,7 @@ section div .links-container {
 
 /* Fourth Grade */
 
-section div .schedule-container img {
+.location-container .schedule-container img {
   /* Display */
   border-radius: 1rem;
   /* Spacers */
@@ -69,7 +64,7 @@ section div .schedule-container img {
 
   /* Second Grade */
 
-  section > div {
+  .location-container {
     /* Display */
     width: auto;
     /* Spacers */
@@ -81,13 +76,12 @@ section div .schedule-container img {
 
   /* Fourth Grade */
 
-  section div .schedule-container img {
+  .location-container .schedule-container img {
     /* Display */
     width: 100%;
     height: 50%;
   }
-  section
-    div
+  .location-container
     .schedule-container
     :is(.table-container, .table-container div, .table-container table) {
     /* Display */

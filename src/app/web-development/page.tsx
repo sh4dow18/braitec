@@ -1,7 +1,6 @@
-import "@/stylesheets/pages/web-development.css";
 // Web Development Page Requirements
 import { Metadata } from "next";
-import { Table, TitleSection } from "@/components";
+import { Subtitle, Table, TitleSection } from "@/components";
 // Web Development Page Metadata
 export const metadata: Metadata = {
   title: "Páginas Web",
@@ -23,9 +22,7 @@ function WebDevelopment() {
         subtitle="Aquí se muestran todos los paquetes relacionados con el Diseño y Desarrollo de Páginas Web para Freelancers y Empresas"
       />
       {/* Packages Section */}
-      <section>
-        {/* Packages Section Title */}
-        <h2>Paquetes</h2>
+      <Subtitle name="Paquetes">
         <Table
           headersList={[
             // Initial Apprentice Header
@@ -190,7 +187,7 @@ function WebDevelopment() {
             },
           ]}
         />
-      </section>
+      </Subtitle>
     </>
   );
 }

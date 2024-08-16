@@ -19,7 +19,7 @@ function ImageSection({ title, image }: Props) {
       <Image
         src={`/misc/${image}.jpg`}
         alt={`Icono ${image}`}
-        width={150}
+        width={220}
         height={150}
       />
     </section>

@@ -1,10 +1,9 @@
-// Contact Page Stylesheets
-import "@/stylesheets/pages/contact.css";
 // Contact Page Requirements
 import { Metadata } from "next";
 import {
   Form,
   InputSection,
+  Subtitle,
   TextareaSection,
   TitleSection,
 } from "@/components";
@@ -24,8 +23,8 @@ function Contact() {
         title="Contacto"
         subtitle="Aqui se Muestran las Opciones Disponibles para Establecer un Contacto con Nosotros"
       />
-      <section>
-        <h2>Formulario de Contacto</h2>
+      {/* Contact Form Section */}
+      <Subtitle name="Formulario de Contacto">
         {/* Contact form that button says "Send message" */}
         {/* Success: Message Sent Successfully */}
         {/* Error: There was an error sending the message, try again */}
@@ -68,7 +67,7 @@ function Contact() {
             maxLength={255}
           />
         </Form>
-      </section>
+      </Subtitle>
     </>
   );
 }
