@@ -17,7 +17,7 @@ type Props = {
 // Transform Price from "10000" to "₡ 10,000.00"
 function FormatPrice(newPrice: number) {
   return `₡ ${newPrice.toLocaleString("en-CR")}.00`;
-};
+}
 // Service Section Main Function
 function RepairCardSection({
   title,
@@ -40,33 +40,44 @@ function RepairCardSection({
         width={300}
         height={200}
       />
-      {/* Service Section List of Services  */}
-      {servicesList && (
-        // Service Section Services Included
-        <section className="list-container services">
-          {/* Services Included Title */}
-          <h4>Servicios Incluidos</h4>
-          {/* Services Included Services List */}
-          <ul>
-            {servicesList.map((service, index) => (
-              <li key={index}>{service}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-      {/* Service Section List of Services  */}
-      {offersList && (
-        // Service Section Services Included
-        <section className="list-container offers">
-          {/* Services Included Title */}
-          <h4>Ofertas Incluidas</h4>
-          {/* Services Included Services List */}
-          <ul>
-            {offersList.map((offer, index) => (
-              <li key={index}>{`${offer.value} (x${offer.amount})`}</li>
-            ))}
-          </ul>
-        </section>
+      {/* If Services List or Offers List were sent, show details */}
+      {(servicesList || offersList) && (
+        // Services and Offers Details
+        <details name="repair">
+          {/* See More Information Summary */}
+          <summary>Ver Más Información</summary>
+          {/* Details Content */}
+          <div>
+            {/* Service Section List of Services  */}
+            {servicesList && (
+              // Service Section Services Included
+              <section className="list-container services">
+                {/* Services Included Title */}
+                <h4>Servicios Incluidos</h4>
+                {/* Services Included Services List */}
+                <ul>
+                  {servicesList.map((service, index) => (
+                    <li key={index}>{service}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+            {/* Service Section List of Services  */}
+            {offersList && (
+              // Service Section Services Included
+              <section className="list-container offers">
+                {/* Services Included Title */}
+                <h4>Ofertas Incluidas</h4>
+                {/* Services Included Services List */}
+                <ul>
+                  {offersList.map((offer, index) => (
+                    <li key={index}>{`${offer.value} (x${offer.amount})`}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+          </div>
+        </details>
       )}
       <div className="price">
         {/* Service Section Price */}

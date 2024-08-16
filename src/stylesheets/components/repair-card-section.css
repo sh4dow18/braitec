@@ -9,6 +9,8 @@
   flex-direction: column;
   width: 300px;
   border-radius: 0.5rem;
+  height: fit-content;
+  position: relative;
   /* Spacers */
   margin: 1rem;
   /* Texts */
@@ -19,6 +21,10 @@
 
 /* Second Grade */
 
+.repair-card-section-container details {
+  /* Display */
+  order: 3;
+}
 .repair-card-section-container h3 {
   /* Display */
   order: 2;
@@ -42,11 +48,10 @@
 .repair-card-section-container .list-container {
   /* Spacers */
   padding-block: 0.5rem;
+  border-top: 1px solid var(--white);
 }
 .repair-card-section-container .list-container.offers {
   /* Display */
-  order: 4;
-  height: 4.5rem;
   align-content: center;
   /* Colors */
   background-color: #777;
@@ -55,15 +60,13 @@
     1px -1px 3px var(--black), 1px 1px 3px var(--black);
 }
 .repair-card-section-container .list-container.services {
-  /* Display */
-  order: 3;
   /* Colors */
   background-color: #222;
   color: var(--white);
 }
 .repair-card-section-container .price {
   /* Display */
-  order: 5;
+  order: 4;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   /* Spacers */
@@ -75,6 +78,44 @@
 
 /* Third Grade */
 
+.repair-card-section-container details summary {
+  /* Display */
+  user-select: none;
+  transition: font-size 0.3s ease, padding-block 0.3s ease;
+  /* Spacers */
+  padding-block: 1rem;
+  /* Texts */
+  font-size: 1.1rem;
+  font-weight: bold;
+  /* Colors */
+  background: linear-gradient(#555, #000);
+  background-color: #222;
+  color: var(--white);
+  text-shadow: -1px -1px 3px var(--black), -1px 1px 3px var(--black),
+    1px -1px 3px var(--black), 1px 1px 3px var(--black);
+}
+.repair-card-section-container details summary:hover {
+  /* Display */
+  cursor: pointer;
+  transition: font-size 0.3s ease, padding-block 0.3s ease;
+  /* Spacers */
+  padding-block: 0.95rem;
+  /* Texts */
+  font-size: 1.2rem;
+}
+.repair-card-section-container details[open] div {
+  /* Display */
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 300px;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  /* Colors */
+  border: 1px solid var(--white);
+}
 .repair-card-section-container .list-container * {
   /* Spacers */
   padding-block: 0.2rem;
