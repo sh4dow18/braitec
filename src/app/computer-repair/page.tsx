@@ -247,6 +247,37 @@ function ComputerRepair() {
       </CardsListSection>
       {/* Combos Cards List Section */}
       <CardsListSection title="Combos">
+        <RepairCardSection
+          title="Armado al Máximo"
+          image="armed-to-the-max"
+          price={30000}
+          servicesList={[
+            "Asesoria de Computadora Ideal",
+            "Ensamble de Computadora",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+          anotherPrice={{
+            value: 50000,
+            type: "separately",
+          }}
+        />
+        {/* I am Fast Card Section */}
+        <RepairCardSection
+          title="Soy Veloz"
+          image="i-am-fast"
+          price={28000}
+          servicesList={[
+            "Cambio de Componente Existente",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+            "Traspaso de Archivos",
+          ]}
+          anotherPrice={{
+            value: 36000,
+            type: "separately",
+          }}
+        />
         {/* War Machine Repair Card Section */}
         <RepairCardSection
           title="Máquina de Guerra"
