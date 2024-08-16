@@ -115,6 +115,7 @@
   border-radius: 0.5rem;
   /* Colors */
   border: 1px solid var(--white);
+  box-shadow: 0 0 1rem var(--black);
 }
 .repair-card-section-container .list-container * {
   /* Spacers */
