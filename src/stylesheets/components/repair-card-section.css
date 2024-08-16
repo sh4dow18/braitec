@@ -150,3 +150,28 @@
   font-weight: normal;
   font-size: 0.9rem;
 }
+
+/* Media Queries */
+/* Sorted by Max Width */
+
+@media screen and (max-width: 742px) {
+  /* Main Classes Styles */
+  /* Sorted Alphabetically */
+
+  /* First Grade */
+
+  .repair-card-section-container {
+    /* Display */
+    position: static;
+  }
+
+  /* Third Grade */
+
+  .repair-card-section-container details[open] div {
+    /* Display */
+    position: static;
+    border-radius: 0;
+    /* Colors */
+    border: none;
+  }
+}
