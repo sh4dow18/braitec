@@ -11,12 +11,12 @@ type Props = {
     value: number;
     type: "regular" | "separately";
   };
-  amount?: {
-    value: number;
-    service: string;
-  };
   servicesList?: string[];
   offersList?: { value: string; amount: number }[];
+};
+// Transform Price from "10000" to "₡ 10,000.00"
+function FormatPrice(newPrice: number) {
+  return `₡ ${newPrice.toLocaleString("en-CR")}.00`;
 };
 // Service Section Main Function
 function RepairCardSection({
@@ -24,14 +24,9 @@ function RepairCardSection({
   image,
   price,
   anotherPrice,
-  amount,
   servicesList,
   offersList,
 }: Props) {
-  // Transform Price from "10000" to "₡ 10,000.00"
-  const FormatPrice = (newPrice: number) => {
-    return `₡ ${newPrice.toLocaleString("en-CR")}.00`;
-  };
   // Return Service Section Component
   return (
     // Service Section Main Container
@@ -45,17 +40,10 @@ function RepairCardSection({
         width={300}
         height={200}
       />
-      {/* Service Section Amount */}
-      {amount && (
-        <div className="amount">
-          <p>{amount.service}</p>
-          <p>{`Cantidad: ${amount.value}`}</p>
-        </div>
-      )}
       {/* Service Section List of Services  */}
       {servicesList && (
         // Service Section Services Included
-        <section className="service-container">
+        <section className="list-container services">
           {/* Services Included Title */}
           <h4>Servicios Incluidos</h4>
           {/* Services Included Services List */}
@@ -69,7 +57,7 @@ function RepairCardSection({
       {/* Service Section List of Services  */}
       {offersList && (
         // Service Section Services Included
-        <section className="offers-container">
+        <section className="list-container offers">
           {/* Services Included Title */}
           <h4>Ofertas Incluidas</h4>
           {/* Services Included Services List */}
@@ -80,17 +68,12 @@ function RepairCardSection({
           </ul>
         </section>
       )}
-      <section className="price">
-        <h4>Precio Apertura</h4>
+      <div className="price">
         {/* Service Section Price */}
         <p>{FormatPrice(price)}</p>
         {/* Service Section Regular Price */}
-        {anotherPrice && (
-          <p className="regular-price">{`Precio ${
-            anotherPrice.type === "regular" ? "Regular" : "por Separado"
-          }: ${FormatPrice(anotherPrice.value)}`}</p>
-        )}
-      </section>
+        {anotherPrice && <p>{FormatPrice(anotherPrice.value)}</p>}
+      </div>
     </section>
   );
 }

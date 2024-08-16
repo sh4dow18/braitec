@@ -4,6 +4,7 @@ import {
   RepairCardSection,
   CardsListSection,
   TitleSection,
+  Table,
 } from "@/components";
 // Computer Repair Page Metadata
 export const metadata: Metadata = {
@@ -11,6 +12,10 @@ export const metadata: Metadata = {
   description:
     "Aquí se muestran todos los servicios, combos, ofertas y megacombos relacionados con la Reparación de Computadoras",
 };
+// Transform Price from "10000" to "₡ 10,000.00"
+function FormatPrice(newPrice: number) {
+  return `₡ ${newPrice.toLocaleString("en-CR")}.00`;
+}
 // Computer Repair Page Main Function
 function ComputerRepair() {
   return (
@@ -20,163 +25,6 @@ function ComputerRepair() {
         title="Computadoras"
         subtitle="Aquí se muestran todos los servicios, combos, ofertas y megacombos relacionados con la Reparación de Computadoras"
       />
-      {/* Offers Section */}
-      <CardsListSection title="Ofertas">
-        {/* Programs Together Card Section */}
-        <RepairCardSection
-          title="Programas Conjuntos"
-          image="programs-together"
-          price={10000}
-          anotherPrice={{
-            value: 15000,
-            type: "separately",
-          }}
-          amount={{
-            value: 5,
-            service: "Instalación de Programa",
-          }}
-        />
-        {/* Technician at Service Card Section */}
-        <RepairCardSection
-          title="Técnico al Servicio"
-          image="technician-at-service"
-          price={7000}
-          anotherPrice={{
-            value: 9000,
-            type: "separately",
-          }}
-          amount={{
-            value: 3,
-            service: "Asistencia Técnica por Hora",
-          }}
-        />
-        {/* Gamer with License Card Section */}
-        <RepairCardSection
-          title="Gamer con Licencia"
-          image="gamer-with-license"
-          price={10000}
-          anotherPrice={{
-            value: 15000,
-            type: "separately",
-          }}
-          amount={{
-            value: 5,
-            service: "Instalación de Videojuegos",
-          }}
-        />
-      </CardsListSection>
-      {/* Combos Section */}
-      <CardsListSection title="Combos">
-        {/* War Machine Card Section */}
-        <RepairCardSection
-          title="Armado al Máximo"
-          image="armed-to-the-max"
-          price={30000}
-          anotherPrice={{
-            value: 50000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Asesoria de Computadora Ideal",
-            "Ensamble de Computadora",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-          ]}
-        />
-        {/* I am Fast Card Section */}
-        <RepairCardSection
-          title="Soy Veloz"
-          image="i-am-fast"
-          price={28000}
-          anotherPrice={{
-            value: 36000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Cambio de Componente Existente",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-            "Traspaso de Archivos",
-          ]}
-        />
-      </CardsListSection>
-      {/* Combos Section */}
-      <CardsListSection title="Mega Combos">
-        {/* War Machine Card Section */}
-        <RepairCardSection
-          title="Máquina de Guerra"
-          image="war-machine"
-          price={40000}
-          anotherPrice={{
-            value: 50000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Asesoria de Computadora Ideal",
-            "Ensamble de Computadora",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-          ]}
-          offersList={[{ value: "Programas Conjuntos", amount: 2 }]}
-        />
-        {/* Max Capacity Card Section */}
-        <RepairCardSection
-          title="Máxima Capacidad"
-          image="max-capacity"
-          price={35000}
-          anotherPrice={{
-            value: 48000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Cambio de Componente Existente",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-            "Traspaso de Archivos",
-          ]}
-          offersList={[{ value: "Programas Conjuntos", amount: 2 }]}
-        />
-        {/* War Machine Card Section */}
-        <RepairCardSection
-          title="Yo soy Iron-Man"
-          image="i-am-iron-man"
-          price={50000}
-          anotherPrice={{
-            value: 70000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Asesoria de Computadora Ideal",
-            "Ensamble de Computadora",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-          ]}
-          offersList={[
-            { value: "Programas Conjuntos", amount: 2 },
-            { value: "Gamer con Licencia", amount: 2 },
-          ]}
-        />
-        {/* Unlimited Card Section */}
-        <RepairCardSection
-          title="Sin Límites"
-          image="unlimited"
-          price={45000}
-          anotherPrice={{
-            value: 68000,
-            type: "separately",
-          }}
-          servicesList={[
-            "Cambio de Componente Existente",
-            "Instalación de Sistema Operativo",
-            "Optimización de Windows",
-            "Traspaso de Archivos",
-          ]}
-          offersList={[
-            { value: "Programas Conjuntos", amount: 2 },
-            { value: "Gamer con Licencia", amount: 2 },
-          ]}
-        />
-      </CardsListSection>
       {/* Services Section */}
       <CardsListSection title="Servicios">
         {/* Computer Diagnosis Card Section */}
@@ -211,7 +59,7 @@ function ComputerRepair() {
         />
         {/* Change of Existing Component Card Section */}
         <RepairCardSection
-          title="Cambio de Componente Existente"
+          title="Cambio de Componente"
           image="change-of-existing-component"
           price={6000}
           anotherPrice={{
@@ -221,7 +69,7 @@ function ComputerRepair() {
         />
         {/* Normal Desktop Cleaning Card Section */}
         <RepairCardSection
-          title="Limpieza Normal de Computadora de Escritorio"
+          title="Limpieza Normal de PC"
           image="normal-desktop-cleaning"
           price={10000}
           anotherPrice={{
@@ -231,7 +79,7 @@ function ComputerRepair() {
         />
         {/* Deep Cleaning of Desktop Computer Card Section */}
         <RepairCardSection
-          title="Limpieza Profunda de Computadora de Escritorio"
+          title="Limpieza Profunda de PC"
           image="deep-cleaning-of-desktop-computer"
           price={30000}
           anotherPrice={{
@@ -261,7 +109,7 @@ function ComputerRepair() {
         />
         {/* Operative System Installation Card Section */}
         <RepairCardSection
-          title="Instalación de Sistema Operativo"
+          title="Instalación de Windows"
           image="operative-system-installation"
           price={15000}
           anotherPrice={{
@@ -331,7 +179,7 @@ function ComputerRepair() {
         />
         {/* Video Game Installation Card Section */}
         <RepairCardSection
-          title="Instalación de Videojuegos"
+          title="Instalación de Videojuego"
           image="video-game-installation"
           price={3000}
           anotherPrice={{
@@ -356,9 +204,144 @@ function ComputerRepair() {
         />
         {/* Home Service Card Section */}
         <RepairCardSection
-          title="Servicio a Domicilio"
+          title="Realizar Servicios Técnicos a Domicilio"
           image="home-service"
           price={5000}
+        />
+      </CardsListSection>
+      {/* Offers Cards List Section */}
+      <CardsListSection title="Ofertas">
+        {/* Programs Together Repair Card Section */}
+        <RepairCardSection
+          title="Programas Conjuntos"
+          image="programs-together"
+          price={10000}
+          servicesList={["Instalación de Programa (x5)"]}
+          anotherPrice={{
+            type: "separately",
+            value: 15000,
+          }}
+        />
+        {/* Technician at Sercive Repair Card Section */}
+        <RepairCardSection
+          title="Técnico al Servicio"
+          image="technician-at-service"
+          price={7000}
+          servicesList={["Asistencia Técnica por Hora (x3)"]}
+          anotherPrice={{
+            type: "separately",
+            value: 9000,
+          }}
+        />
+        {/* Gamer with License Repair Card Section */}
+        <RepairCardSection
+          title="Gamer con Licencia"
+          image="gamer-with-license"
+          price={10000}
+          servicesList={["Instalación de Videojuego (x5)"]}
+          anotherPrice={{
+            type: "separately",
+            value: 15000,
+          }}
+        />
+      </CardsListSection>
+      {/* Combos Cards List Section */}
+      <CardsListSection title="Combos">
+        {/* War Machine Repair Card Section */}
+        <RepairCardSection
+          title="Máquina de Guerra"
+          image="war-machine"
+          price={40000}
+          servicesList={[
+            "Asesoria de Computadora Ideal",
+            "Ensamble de Computadoras",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+          offersList={[
+            {
+              value: "Programas Conjuntos",
+              amount: 2,
+            },
+          ]}
+          anotherPrice={{
+            type: "separately",
+            value: 60000,
+          }}
+        />
+        {/* Max Capacity Repair Card Section */}
+        <RepairCardSection
+          title="Máxima Capacidad"
+          image="max-capacity"
+          price={38000}
+          servicesList={[
+            "Cambio de un Componente",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+            "Traspaso de Archivos",
+          ]}
+          offersList={[
+            {
+              value: "Programas Conjuntos",
+              amount: 2,
+            },
+          ]}
+          anotherPrice={{
+            type: "separately",
+            value: 58000,
+          }}
+        />
+        {/* I am Iron-Man Repair Card Section */}
+        <RepairCardSection
+          title="Yo soy Iron-Man"
+          image="i-am-iron-man"
+          price={50000}
+          servicesList={[
+            "Asesoria de Computadora Ideal",
+            "Ensamble de Computadoras",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+          ]}
+          offersList={[
+            {
+              value: "Programas Conjuntos",
+              amount: 2,
+            },
+            {
+              value: "Gamer con Licencia",
+              amount: 2,
+            },
+          ]}
+          anotherPrice={{
+            type: "separately",
+            value: 90000,
+          }}
+        />
+        {/* Unlimited Repair Card Section */}
+        <RepairCardSection
+          title="Sin Límites"
+          image="unlimited"
+          price={48000}
+          servicesList={[
+            "Cambio de un Componente",
+            "Instalación de Sistema Operativo",
+            "Optimización de Windows",
+            "Traspaso de Archivos",
+          ]}
+          offersList={[
+            {
+              value: "Programas Conjuntos",
+              amount: 2,
+            },
+            {
+              value: "Gamer con Licencia",
+              amount: 2,
+            },
+          ]}
+          anotherPrice={{
+            type: "separately",
+            value: 88000,
+          }}
         />
       </CardsListSection>
     </>
