@@ -21,7 +21,7 @@ function Store() {
       />
       {/* Location Section */}
       <Subtitle name="Nuestra Ubicación">
-        <div>
+        <div className="location-container">
           <p>
             Del Super Cali 50 Metros Norte y 50 Metros Este Penúltima Casa a
             Mano Derecha Portón Negro, Rincón Herrera, Guácima, Alajuela,
